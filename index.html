@@ -56,7 +56,115 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <tr onmouseout="GenDSA_stop()" onmouseover="GenDSA_start()" bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
+          <source src="videos/GenDSA.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/GenDSA.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function GenDSA_start() {
+            document.getElementById('GenDSA_image').style.opacity = "1";
+          }
 
+          function GenDSA_stop() {
+            document.getElementById('GenDSA_image').style.opacity = "0";
+          }
+          GenDSA_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="">
+          <span class="papertitle">Large-scale Pretrained Frame Generative Model Enables Real-Time Low-Dose DSA Imaging: an AI System Development and Multicenter Validation Study</span>
+        </a>
+        <br>
+    <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&hl=zh-CN&oi=ao">Huangxuan Zhao*</a>,
+    <strong>Ziyang Xu*</strong>,
+    <a>Linxia Wu*</a>,
+    <a>Lei Chen*</a>,
+    <a href="https://github.com/ziwei-cui">Ziwei Cui</a>,
+    <a>Jinqiang Ma</a>,
+    <a>Tao Sun</a>,
+    <a>Yu Lei</a>,
+    <a>Nan Wang</a>,
+    <a>Hongyao Hu</a>,
+    <a>Yiqing Tan</a>,
+    <a>Wei Lu</a>,
+    <a>Wenzhong Yang</a>,
+    <a>Kaibing Liao</a>,
+    <a>Gaojun Teng</a>,
+    <a>Xiaoyun Liang</a>,
+    <a>Yi Li</a>,
+    <a>Congcong Feng</a>,
+    <a>Xiaoyu Han</a>,
+    <a>P.Matthijs van der Sluij</a>,
+    <a>Charles B.L.M. Majoie</a>,
+    <a>Wim H. van Zwam</a>,
+    <a>Yun Feng</a>,
+    <a>Theo van Walsum</a>,
+    <a>Aad van der Lugt</a>,
+    <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+    <a>Xuefeng Kan</a>,
+    <a>Ruisheng Su</a>,
+    <a>Weihua Zhang</a>,
+    <a href="https://xwcv.github.io/">Xinggang Wang</a>,
+    <a href="https://scholar.google.com/citations?user=abn37yYAAAAJ&hl=zh-CN&oi=ao">Chuansheng Zheng</a>
+        <br>
+        <em>Med (Cell Press)</em>, 2024
+        <br>
+        <a href="https://github.com/ZyoungXu/GenDSA">github</a>
+        <p></p>
+        <p>
+        GenDSA is pre-trained, fine-tuned and tested on ten million of images from 35 hospitals. The generated videos reach a comparable level to the full-sampled videos, both in terms of overall quality (4.905 vs 4.935) and lesion assessment (4.825 vs 4.860).
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="MoStDSA_stop()" onmouseover="MoStDSA_start()" bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='MoStDSA_image'>
+            <img src='images/MoSt-DSA_after.png' width=100%>
+          </div>
+          <img src='images/MoSt-DSA_before.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function MoStDSA_start() {
+            document.getElementById('MoStDSA_image').style.opacity = "1";
+          }
+
+          function MoStDSA_stop() {
+            document.getElementById('MoStDSA_image').style.opacity = "0";
+          }
+          MoStDSA_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2407.07078">
+          <span class="papertitle">MoSt-DSA: Modeling Motion and Structural Interactions for Direct Multi-Frame Interpolation in DSA Images</span>
+        </a>
+        <br>
+    <strong>Ziyang Xu</strong>,
+    <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&hl=zh-CN&oi=ao">Huangxuan Zhao</a>,
+    <a href="https://github.com/ziwei-cui">Ziwei Cui</a>,
+    <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+    <a href="https://scholar.google.com/citations?user=abn37yYAAAAJ&hl=zh-CN&oi=ao">Chuansheng Zheng</a>,
+    <a href="https://xwcv.github.io/">Xinggang Wang</a>
+        <br>
+        <em>European Conference on Artificial Intelligence</em>, 2024
+        <br>
+        <a href="https://arxiv.org/abs/2407.07078">arXiv</a>
+        /
+        <a href="https://github.com/ZyoungXu/MoSt-DSA">github</a>
+        <p></p>
+        <p>
+        The first work that uses deep learning for DSA frame interpolation, comprehensively achieving SOTA in accuracy, speed, visual effect, and memory usage.
+        </p>
+      </td>
+    </tr>
 
     <!-- <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
