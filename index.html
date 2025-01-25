@@ -57,7 +57,49 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="XSVID_stop()" onmouseover="XSVID_start()" bgcolor="#ffffd0">
+    <tr onmouseout="GaraMoSt_stop()" onmouseover="GaraMoSt_stop()" bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='GaraMoSt_image'>
+            <img src='images/GaraMoSt_after.png' width=100%>
+          </div>
+          <img src='images/GaraMoSt_before.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function GaraMoSt_start() {
+            document.getElementById('GaraMoSt_image').style.opacity = "1";
+          }
+
+          function GaraMoSt_stop() {
+            document.getElementById('GaraMoSt_image').style.opacity = "0";
+          }
+          GaraMoSt_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2412.14118">
+          <span class="papertitle">GaraMoSt: Parallel Multi-Granularity Motion and Structural Modeling for Efficient Multi-Frame Interpolation in DSA Images</span>
+        </a>
+        <br>
+    <strong>Ziyang Xu</strong>,
+    <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&hl=zh-CN&oi=ao">Huangxuan Zhao</a>,
+    <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+    <a href="https://xwcv.github.io/">Xinggang Wang</a>
+        <br>
+        <em><strong>Association for the Advancement of Artificial Intelligence (AAAI)</strong></em>, 2025
+        <br>
+        <a href="https://arxiv.org/abs/2412.14118">Paper</a>
+        /
+        <a href="https://github.com/ZyoungXu/GaraMoSt">Code</a>
+        <p></p>
+        <p>
+          Compared to our last job MoSt-DSA, GaraMoSt adds multi-granularity motion and structural feature modeling and modifies the overall Pipeline into a highly parallel design, which greatly improves the accuracy and reduces high-frequency and low-frequency noise under the same inference time level (for interpolating 3 frames, only increasing by 0.005s). Comprehensive beyond the SOTA natural scene, and DSA scene methods.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="XSVID_stop()" onmouseover="XSVID_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='XSVID_image'>
@@ -66,14 +108,14 @@
           <img src='images/XSVID_before.png' width=100%>
         </div>
         <script type="text/javascript">
-          function MoStDSA_start() {
+          function XSVID_start() {
             document.getElementById('XSVID_image').style.opacity = "1";
           }
 
-          function MoStDSA_stop() {
+          function XSVID_stop() {
             document.getElementById('XSVID_image').style.opacity = "0";
           }
-          MoStDSA_stop()
+          XSVID_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
