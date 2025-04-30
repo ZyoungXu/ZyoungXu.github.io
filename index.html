@@ -57,6 +57,53 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+            <tr onmouseout="PixelHacker_stop()" onmouseover="PixelHacker_stop()" bgcolor="#ffffd0">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='PixelHacker_image'>
+                    <img src='images/PixelHacker_after.png' width=100%>
+                  </div>
+                  <img src='images/PixelHacker_before.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function PixelHacker_start() {
+                    document.getElementById('PixelHacker_image').style.opacity = "1";
+                  }
+                  function PixelHacker_stop() {
+                    document.getElementById('PixelHacker_image').style.opacity = "0";
+                  }
+                  PixelHacker_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2504.20438">
+                  <span class="papertitle">PixelHacker: Image Inpainting with Structural and Semantic Consistency</span>
+                </a>
+                <br>
+            <strong>Ziyang Xu</strong>,
+            <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&hl=zh-CN&oi=ao">Kangsheng Duan</a>,
+            Xiaolei Shen,
+            Zhifeng Ding,
+            <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+            Xiaohu Ruan,
+            <a href="https://scholar.google.com/citations?hl=zh-CN&user=SI_oBwsAAAAJ">Xiaoxin Chen</a>,
+            <a href="https://xwcv.github.io/">Xinggang Wang</a>
+                <br>
+                <em><strong>arXiv preprint</strong></em>, 2025
+                <br>
+                <a href="https://arxiv.org/abs/2504.20438">Paper</a>
+                /
+                <a href="https://github.com/hustvl/PixelHacker">Code</a>
+                /
+                <a href="https://hustvl.github.io/projects/PixelHacker">Project Page</a>
+                <p></p>
+                <p>
+                  To address the problem of complex structural and semantic consistency in image inpainting, we propose a novel paradigm called Latent Categories Guidance (LCG), and further propose PixelHacker, a diffusion model-based image inpainting model. PixelHacker efficiently guides the generation process by introducing latent foreground and background representations to achieve structural and semantic consistency, achieving state-of-the-art performance on multiple benchmarks for natural scenes (Places2), face scenes (CelebA-HQ, and FFHQ).
+                </p>
+              </td>
+            </tr>
+
+
     <tr onmouseout="GaraMoSt_stop()" onmouseover="GaraMoSt_stop()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -86,7 +133,7 @@
     <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
     <a href="https://xwcv.github.io/">Xinggang Wang</a>
         <br>
-        <em><strong>Association for the Advancement of Artificial Intelligence (AAAI)</strong></em>, 2025
+        <em><strong>AAAI Conference on Artificial Intelligence (AAAI)</strong></em>, 2025
         <br>
         <a href="https://arxiv.org/abs/2412.14118">Paper</a>
         /
@@ -130,7 +177,7 @@
     <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
     <a href="https://xwcv.github.io/">Xinggang Wang</a>
         <br>
-        <em><strong>Conference on Neural Information Processing Systems (NIPS)</strong></em>, 2024, <strong>[Under Review]</strong>
+        <em><strong>arXiv preprint</strong></em>, 2024
         <br>
         <a href="https://arxiv.org/abs/2407.18137">Paper</a>
         /
