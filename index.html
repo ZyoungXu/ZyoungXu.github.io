@@ -1,4 +1,7 @@
 <!DOCTYPE HTML>
+
+<style>@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap');</style>
+
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -13,7 +16,7 @@
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table style="width:100%;max-width:1200px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -61,33 +64,46 @@
 
 
             <tr onmouseout="GenDSAv2_stop()" onmouseover="GenDSAv2_start()" bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td style="padding:20px;width:20%;vertical-align:middle">
                 <div class="one">
                   <!-- <div class="two" id='GenDSA_image'><video  width=100% muted autoplay loop>
                   <source src="videos/GenDSA.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video></div> -->
                   <div class="two" id='GenDSAv2_image'>
-                    <img src='images/GenDSAv2_after.png' width=100%>
+                    <img src='images/GenDSAv2_after.png' width=110%>
                   </div>
-                  <img src='images/GenDSAv2.png' width=100%>
+                  <img src='images/GenDSAv2.png' width=110%>
                 </div>
                 <script type="text/javascript">
                   function GenDSAv2_start() {
                     document.getElementById('GenDSAv2_image').style.opacity = "1";
                   }
-
                   function GenDSAv2_stop() {
                     document.getElementById('GenDSAv2_image').style.opacity = "0";
                   }
                   GenDSAv2_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td style="padding:20px;width:80%;vertical-align:middle">
+                <!-- 论文标题 -->
                 <a href="">
-                  <span class="papertitle">Generative AI-based Low-Dose Digital Subtraction Angiography for Intraoperative Radiation Dose Reduction: a Randomized Controlled Trial</span>
+                  <span class="papertitle">
+                    <a style="font-family: 'Playfair Display'; font-size:9px;">
+                      <h1 style="font-weight:700;">Generative AI-based Low-Dose Digital Subtraction Angiography for Intraoperative Radiation Dose Reduction: a Randomized Controlled Trial</h1>
+                    </a>
+                  </span>
                 </a>
-                <br>
+                <!-- 期刊/会议名称 + paper/code/project page -->
+                <t>
+                  <h1 style="font-size:16px;">
+                    <em> Nature Medicine, 2025 (IF 50) </em>
+                    <br>
+                    <a href="">Paper (coming soon)</a>
+                /
+                <a href="https://github.com/ZyoungXu/GenDSA">Code</a>
+                  </h1>
+                </t>
             Huangxuan Zhao*,
             Yaowei  Bai*,
             Lei Chen*,
@@ -96,7 +112,7 @@
             Tao Sun,
             Linxia Wu,
             Ruiheng Zhang,
-            <strong>Ziyang Xu*</strong>,
+            <strong>Ziyang Xu</strong>,
             Xiaoyun Liang,
             Yi Li,
             Yan Huang,
@@ -120,15 +136,7 @@
             <a href="https://xwcv.github.io/">Xinggang Wang</a>,
             <a href="https://scholar.google.com/citations?user=abn37yYAAAAJ&hl=zh-CN&oi=ao">Chuansheng Zheng</a>
                 <br>
-                * equal contribution
-                <br>
-                <em><strong>Nature Medicine</strong></em>, 2025
-                <br>
-                <!-- <a href="https://www.cell.com/cms/10.1016/j.medj.2024.07.025/attachment/4209f5f8-1a77-4e15-a872-80a6239ec7bd/mmc3.pdf#:~:text=development%20and%20multi-center%20validation%20study,%20Med%20(2024),">Paper</a> -->
-                Paper coming soon
-                /
-                <a href="https://github.com/ZyoungXu/GenDSA">Code</a>
-                <p></p>
+                <strong>* equal contribution</strong>
                 <p>
                 Through retrospective analyses and iterative system upgrades, we developed GenDSA-v2, which is, to the best of our knowledge, the largest and most comprehensive low-dose imaging system to date. Leveraging a multi-center cohort of 50,000 patients from 86 hospitals worldwide, collected in collaboration with major international vendors (GE, Philips, and Siemens), we demonstrate that GenDSA-v2 achieves a threefold reduction in radiation dose without compromising diagnostic or interventional performance. Its clinical effectiveness and safety were further validated through animal studies and prospective evaluations, including cross-over observational trials and randomized controlled studies, confirming that GenDSA-v2 maintains sufficient image fidelity to visualize lesions as small as 1 mm.
                 </p>
@@ -136,13 +144,74 @@
             </tr>
 
 
+<tr onmouseout="Genesis_stop()" onmouseover="Genesis_start()">
+              <td style="padding:20px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='Genesis_image'>
+                    <img src='images/Genesis_after_demo.gif' width=110%>
+                  </div>
+                  <img src='images/Genesis.png' width=110%>
+                </div>
+                <script type="text/javascript">
+                  function Genesis_start() {
+                    document.getElementById('Genesis_image').style.opacity = "1";
+                  }
+                  function Genesis_stop() {
+                    document.getElementById('Genesis_image').style.opacity = "0";
+                  }
+                  Genesis_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:80%;vertical-align:middle">
+                <!-- 论文标题 -->
+                <a href="https://arxiv.org/abs/2506.07497">
+                  <span class="papertitle">
+                    <a style="font-family: 'Playfair Display'; font-size:9px;">
+                      <h1 style="font-weight:700;">Genesis: Multimodal Driving Scene Generation with Spatio-Temporal and Cross-Modal Consistency</h1>
+                    </a>
+                  </span>
+                </a>
+                <!-- 期刊/会议名称 + paper/code/project page -->
+                <t>
+                  <h1 style="font-size:16px;">
+                    <em> Conference on Neural Information Processing Systems (NeurIPS), 2025</em>
+                    <br>
+                    <a href="https://arxiv.org/abs/2506.07497">Paper</a>
+                    /
+                    <a href="https://github.com/xiaomi-research/genesis">Code</a>
+                    /
+                    <a href="https://xiaomi-research.github.io/genesis/">Project Page</a>
+                  </h1>
+                </t>
+            Xiangyu Guo*,
+            Zhanqian Wu*,
+            Kaixin Xiong*,
+            <strong>Ziyang Xu</strong>,
+            Lijun Zhou,
+            Gangwei Xu,
+            Shaoqing Xu,
+            Haiyang Sun,
+            Bing Wang,
+            Guang Chen,
+            Hangjun Ye,
+            <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+            <a href="https://xwcv.github.io/">Xinggang Wang</a>
+                <br>
+                <strong>* equal contribution</strong>
+                <p>
+                  To address the problem of complex structural and semantic consistency in image inpainting, we propose a novel paradigm called Latent Categories Guidance (LCG), and further propose PixelHacker, a diffusion model-based image inpainting model. PixelHacker efficiently guides the generation process by introducing latent foreground and background representations to achieve structural and semantic consistency, achieving state-of-the-art performance on multiple benchmarks for natural scenes (Places2), face scenes (CelebA-HQ, and FFHQ).
+                </p>
+              </td>
+            </tr>
+
+
             <tr onmouseout="PixelHacker_stop()" onmouseover="PixelHacker_start()" bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td style="padding:20px;width:20%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='PixelHacker_image'>
-                    <img src='images/PixelHacker_after_demo.gif' width=100%>
+                    <img src='images/PixelHacker_after_demo.gif' width=110%>
                   </div>
-                  <img src='images/PixelHacker_before.png' width=100%>
+                  <img src='images/PixelHacker_before.png' width=110%>
                 </div>
                 <script type="text/javascript">
                   function PixelHacker_start() {
@@ -154,11 +223,27 @@
                   PixelHacker_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td style="padding:20px;width:80%;vertical-align:middle">
+                <!-- 论文标题 -->
                 <a href="https://arxiv.org/abs/2504.20438">
-                  <span class="papertitle">PixelHacker: Image Inpainting with Structural and Semantic Consistency</span>
+                  <span class="papertitle">
+                    <a style="font-family: 'Playfair Display'; font-size:9px;">
+                      <h1 style="font-weight:700;">PixelHacker: Image Inpainting with Structural and Semantic Consistency</h1>
+                    </a>
+                  </span>
                 </a>
-                <br>
+                <!-- 期刊/会议名称 + paper/code/project page -->
+                <t>
+                  <h1 style="font-size:16px;">
+                    <em> arXiv preprint, 2025</em>
+                    <br>
+                    <a href="https://arxiv.org/abs/2504.20438">Paper</a>
+                    /
+                    <a href="https://github.com/hustvl/PixelHacker">Code</a>
+                    /
+                    <a href="https://hustvl.github.io/PixelHacker">Project Page</a>
+                  </h1>
+                </t>
             <strong>Ziyang Xu</strong>,
             <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&hl=zh-CN&oi=ao">Kangsheng Duan</a>,
             Xiaolei Shen,
@@ -169,15 +254,6 @@
             <a href="https://xwcv.github.io/">Xinggang Wang</a>
                 <br>
                 ⚑ <em>This work was done when Ziyang Xu and Kangsheng Duan were interning at VIVO.</em>
-                <br>
-                <em><strong>arXiv preprint</strong></em>, 2025
-                <br>
-                <a href="https://arxiv.org/abs/2504.20438">Paper</a>
-                /
-                <a href="https://github.com/hustvl/PixelHacker">Code</a>
-                /
-                <a href="https://hustvl.github.io/PixelHacker">Project Page</a>
-                <p></p>
                 <p>
                   To address the problem of complex structural and semantic consistency in image inpainting, we propose a novel paradigm called Latent Categories Guidance (LCG), and further propose PixelHacker, a diffusion model-based image inpainting model. PixelHacker efficiently guides the generation process by introducing latent foreground and background representations to achieve structural and semantic consistency, achieving state-of-the-art performance on multiple benchmarks for natural scenes (Places2), face scenes (CelebA-HQ, and FFHQ).
                 </p>
@@ -186,12 +262,12 @@
 
 
     <tr onmouseout="GaraMoSt_stop()" onmouseover="GaraMoSt_start()" bgcolor="#ffffd0">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td style="padding:20px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='GaraMoSt_image'>
-            <img src='images/GaraMoSt_after.png' width=100%>
+            <img src='images/GaraMoSt_after.png' width=110%>
           </div>
-          <img src='images/GaraMoSt_before.png' width=100%>
+          <img src='images/GaraMoSt_before.png' width=110%>
         </div>
         <script type="text/javascript">
           function GaraMoSt_start() {
@@ -204,22 +280,29 @@
           GaraMoSt_stop()
         </script>
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
+      <td style="padding:20px;width:80%;vertical-align:middle">
+        <!-- 论文标题 -->
         <a href="https://arxiv.org/abs/2412.14118">
-          <span class="papertitle">GaraMoSt: Parallel Multi-Granularity Motion and Structural Modeling for Efficient Multi-Frame Interpolation in DSA Images</span>
+          <span class="papertitle">
+            <a style="font-family: 'Playfair Display'; font-size:9px;">
+              <h1 style="font-weight:700;">GaraMoSt: Parallel Multi-Granularity Motion and Structural Modeling for Efficient Multi-Frame Interpolation in DSA Images</h1>
+            </a>
+          </span>
         </a>
-        <br>
+        <!-- 期刊/会议名称 + paper/code/project page -->
+        <t>
+          <h1 style="font-size:16px;">
+            <em> AAAI Conference on Artificial Intelligence (AAAI), 2025</em>
+            <br>
+            <a href="https://arxiv.org/abs/2412.14118">Paper</a>
+            /
+            <a href="https://github.com/ZyoungXu/GaraMoSt">Code</a>
+          </h1>
+        </t>
     <strong>Ziyang Xu</strong>,
     <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&hl=zh-CN&oi=ao">Huangxuan Zhao</a>,
     <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
     <a href="https://xwcv.github.io/">Xinggang Wang</a>
-        <br>
-        <em><strong>AAAI Conference on Artificial Intelligence (AAAI)</strong></em>, 2025
-        <br>
-        <a href="https://arxiv.org/abs/2412.14118">Paper</a>
-        /
-        <a href="https://github.com/ZyoungXu/GaraMoSt">Code</a>
-        <p></p>
         <p>
           Compared to our last job MoSt-DSA, GaraMoSt adds multi-granularity motion and structural feature modeling and modifies the overall Pipeline into a highly parallel design, which greatly improves the accuracy and reduces high-frequency and low-frequency noise under the same inference time level (for interpolating 3 frames, only increasing by 0.005s). Comprehensive beyond the SOTA natural scene, and DSA scene methods.
         </p>
@@ -228,12 +311,12 @@
 
 
     <tr onmouseout="XSVID_stop()" onmouseover="XSVID_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td style="padding:20px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='XSVID_image'>
-            <img src='images/XSVID_after.png' width=100%>
+            <img src='images/XSVID_after.png' width=110%>
           </div>
-          <img src='images/XSVID_before.png' width=100%>
+          <img src='images/XSVID_before.png' width=110%>
         </div>
         <script type="text/javascript">
           function XSVID_start() {
@@ -246,26 +329,33 @@
           XSVID_stop()
         </script>
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
+      <td style="padding:20px;width:80%;vertical-align:middle">
+        <!-- 论文标题 -->
         <a href="https://arxiv.org/abs/2407.18137">
-          <span class="papertitle">XS-VID: An Extremely Small Video Object Detection Dataset</span>
+          <span class="papertitle">
+            <a style="font-family: 'Playfair Display'; font-size:9px;">
+              <h1 style="font-weight:700;">XS-VID: An Extremely Small Video Object Detection Dataset</h1>
+            </a>
+          </span>
         </a>
-        <br>
+        <!-- 期刊/会议名称 + paper/code/project page -->
+        <t>
+          <h1 style="font-size:16px;">
+            <em> arXiv preprint, 2024</em>
+            <br>
+            <a href="https://arxiv.org/abs/2407.18137">Paper</a>
+            /
+            <a href="https://github.com/gjhhust/YOLOFT">Code(YOLOFT)</a>
+            /
+            <a href="https://gjhhust.github.io/XS-VID/">Dataset(XS-VID)</a>
+          </h1>
+        </t>
     Jiahao Guo,
     <strong>Ziyang Xu</strong>,
     Lianjun Wu,
     Fei Gao,
     <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
     <a href="https://xwcv.github.io/">Xinggang Wang</a>
-        <br>
-        <em><strong>arXiv preprint</strong></em>, 2024
-        <br>
-        <a href="https://arxiv.org/abs/2407.18137">Paper</a>
-        /
-        <a href="https://github.com/gjhhust/YOLOFT">Code(YOLOFT)</a>
-        /
-        <a href="https://gjhhust.github.io/XS-VID/">Dataset(XS-VID)</a>
-        <p></p>
         <p>
           XS-VID dataset comprises aerial data from various periods and scenes, and extensively collects three types of objects with smaller pixel areas: extremely small (0-12^2), relatively small (12^2-20^2), and generally small (20^2-32^2). XS-VID offers unprecedented breadth and depth in covering and quantifying minuscule objects, significantly enriching the scene and object diversity in the dataset.
           YOLOFT enhances local feature associations and integrates temporal motion features, significantly improving the accuracy and stability of Small Video Object Detection.
@@ -275,16 +365,16 @@
 
 
     <tr onmouseout="GenDSA_stop()" onmouseover="GenDSA_start()" bgcolor="#ffffd0">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td style="padding:20px;width:20%;vertical-align:middle">
         <div class="one">
           <!-- <div class="two" id='GenDSA_image'><video  width=100% muted autoplay loop>
           <source src="videos/GenDSA.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div> -->
           <div class="two" id='GenDSA_image'>
-            <img src='images/GenDSA_after_demo.gif' width=100%>
+            <img src='images/GenDSA_after_demo.gif' width=110%>
           </div>
-          <img src='images/GenDSA.png' width=100%>
+          <img src='images/GenDSA.png' width=110%>
         </div>
         <script type="text/javascript">
           function GenDSA_start() {
@@ -297,11 +387,25 @@
           GenDSA_stop()
         </script>
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
+      <td style="padding:20px;width:80%;vertical-align:middle">
+        <!-- 论文标题 -->
         <a href="https://doi.org/10.1016/j.medj.2024.07.025">
-          <span class="papertitle">Large-scale Pretrained Frame Generative Model Enables Real-Time Low-Dose DSA Imaging: an AI System Development and Multicenter Validation Study</span>
+          <span class="papertitle">
+            <a style="font-family: 'Playfair Display'; font-size:9px;">
+              <h1 style="font-weight:700;">Large-scale Pretrained Frame Generative Model Enables Real-Time Low-Dose DSA Imaging: an AI System Development and Multicenter Validation Study</h1>
+            </a>
+          </span>
         </a>
-        <br>
+        <!-- 期刊/会议名称 + paper/code/project page -->
+        <t>
+          <h1 style="font-size:16px;">
+            <em> Med (Cell Press), 2024 (IF 17)</em>
+            <br>
+            <a href="https://www.cell.com/cms/10.1016/j.medj.2024.07.025/attachment/4209f5f8-1a77-4e15-a872-80a6239ec7bd/mmc3.pdf#:~:text=development%20and%20multi-center%20validation%20study,%20Med%20(2024),">Paper</a>
+            /
+            <a href="https://github.com/ZyoungXu/GenDSA">Code</a>
+          </h1>
+        </t>
     <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&hl=zh-CN&oi=ao">Huangxuan Zhao*</a>,
     <strong>Ziyang Xu*</strong>,
     Linxia Wu*,
@@ -334,14 +438,7 @@
     <a href="https://xwcv.github.io/">Xinggang Wang</a>,
     <a href="https://scholar.google.com/citations?user=abn37yYAAAAJ&hl=zh-CN&oi=ao">Chuansheng Zheng</a>
         <br>
-        * equal contribution
-        <br>
-        <em><strong>Med (Cell Press)</strong></em>, 2024
-        <br>
-        <a href="https://www.cell.com/cms/10.1016/j.medj.2024.07.025/attachment/4209f5f8-1a77-4e15-a872-80a6239ec7bd/mmc3.pdf#:~:text=development%20and%20multi-center%20validation%20study,%20Med%20(2024),">Paper</a>
-        /
-        <a href="https://github.com/ZyoungXu/GenDSA">Code</a>
-        <p></p>
+        <strong>* equal contribution</strong>
         <p>
         GenDSA is a large-scale pretrained multi-frame generative model-based real-time and low-dose DSA imaging system, which pre-trained, fine-tuned and tested on ten million of images from 35 hospitals. Suitable for most DSA scanning protocols, GenDSA could reduce the DSA frame rate (i.e., radiation dose) to 1/3 and generates video that was virtually identical to clinically available protocols. Videos generated by GenDSA reach a comparable level to the full-sampled videos, both in terms of overall quality (4.905 vs 4.935) and lesion assessment (4.825 vs 4.860), which fully demonstrated the potential of GenDSA for clinical applications.
         </p>
@@ -350,12 +447,12 @@
 
 
     <tr onmouseout="MoStDSA_stop()" onmouseover="MoStDSA_start()" bgcolor="#ffffd0">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td style="padding:20px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='MoStDSA_image'>
-            <img src='images/MoSt-DSA_after.png' width=100%>
+            <img src='images/MoSt-DSA_after.png' width=110%>
           </div>
-          <img src='images/MoSt-DSA_before.png' width=100%>
+          <img src='images/MoSt-DSA_before.png' width=110%>
         </div>
         <script type="text/javascript">
           function MoStDSA_start() {
@@ -368,24 +465,32 @@
           MoStDSA_stop()
         </script>
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
+      <td style="padding:20px;width:80%;vertical-align:middle">
+        <!-- 论文标题 -->
         <a href="https://arxiv.org/abs/2407.07078">
-          <span class="papertitle">MoSt-DSA: Modeling Motion and Structural Interactions for Direct Multi-Frame Interpolation in DSA Images</span>
+          <span class="papertitle">
+            <a style="font-family: 'Playfair Display'; font-size:9px;">
+              <h1 style="font-weight:700;">MoSt-DSA: Modeling Motion and Structural Interactions for Direct Multi-Frame Interpolation in DSA Images</h1>
+            </a>
+          </span>
         </a>
-        <br>
+        <!-- 期刊/会议名称 + paper/code/project page -->
+        <t>
+          <h1 style="font-size:16px;">
+            <em> European Conference on Artificial Intelligence (ECAI), 2024</em>
+            <br>
+            <a href="https://arxiv.org/abs/2407.07078">Paper</a>
+            /
+            <a href="https://github.com/ZyoungXu/MoSt-DSA">Code</a>
+          </h1>
+        </t>
+        
     <strong>Ziyang Xu</strong>,
     <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&hl=zh-CN&oi=ao">Huangxuan Zhao</a>,
     <a href="https://github.com/ziwei-cui">Ziwei Cui</a>,
     <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
     <a href="https://scholar.google.com/citations?user=abn37yYAAAAJ&hl=zh-CN&oi=ao">Chuansheng Zheng</a>,
     <a href="https://xwcv.github.io/">Xinggang Wang</a>
-        <br>
-        <em><strong>European Conference on Artificial Intelligence (ECAI)</strong></em>, 2024
-        <br>
-        <a href="https://arxiv.org/abs/2407.07078">Paper</a>
-        /
-        <a href="https://github.com/ZyoungXu/MoSt-DSA">Code</a>
-        <p></p>
         <p>
         MoSt-DSA is the first work that uses deep learning for DSA frame interpolation, comprehensively achieving SOTA in accuracy, speed, visual effect, and memory usage. Meanwhile, MoSt-DSA is also the first method that directly achieves any number of interpolations at any time steps with just one forward pass during both training and testing. If applied clinically, MoSt-DSA can significantly reduce the DSA radiation dose received by doctors and patients when applied clinically, lowering it by 50%, 67%, and 75% when interpolating 1 to 3 frames, respectively.
         </p>
