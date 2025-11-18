@@ -195,7 +195,7 @@
                 <br>
                 <strong>* equal contribution</strong>
                 <p>
-                  To address the problem of complex structural and semantic consistency in image inpainting, we propose a novel paradigm called Latent Categories Guidance (LCG), and further propose PixelHacker, a diffusion model-based image inpainting model. PixelHacker efficiently guides the generation process by introducing latent foreground and background representations to achieve structural and semantic consistency, achieving state-of-the-art performance on multiple benchmarks for natural scenes (Places2), face scenes (CelebA-HQ, and FFHQ).
+                Genesis is a unified framework for joint generation of multi-view driving videos and LiDAR sequences with spatio-temporal and cross-modal consistency. Genesis employs a two-stage architecture that integrates a DiT-based video diffusion model with 3D-VAE encoding, and a BEV-aware LiDAR generator with NeRF-based rendering and adaptive sampling. Both modalities are directly coupled through a shared latent space, enabling coherent evolution across visual and geometric domains. Extensive experiments on the nuScenes benchmark demonstrate that Genesis achieves SOTA performance across video and LiDAR metrics (FVD 16.95, FID 4.24, Chamfer 0.611), and benefits downstream tasks including segmentation and 3D detection, validating the semantic fidelity and practical utility of the generated data.
                 </p>
               </td>
             </tr>
@@ -249,7 +249,7 @@
                 <br>
                 ⚑ <em>This work was done when Ziyang Xu and Kangsheng Duan were interning at VIVO.</em>
                 <p>
-                  To address the problem of complex structural and semantic consistency in image inpainting, we propose a novel paradigm called Latent Categories Guidance (LCG), and further propose PixelHacker, a diffusion model-based image inpainting model. PixelHacker efficiently guides the generation process by introducing latent foreground and background representations to achieve structural and semantic consistency, achieving state-of-the-art performance on multiple benchmarks for natural scenes (Places2), face scenes (CelebA-HQ, and FFHQ).
+                PixelHacker is a purely visual and general inpainting framework. Its core lies in a new paradigm named Latent Categories Guidance (LCG), which introduces category-level latent semantic distribution to guide latent space for structural and semantic consistent denoising. PixelHacker achieves 0.86B parameters—only 7% and 11% of Flux.1-Fill-dev and SD3.5 Large-Inpainting—running at 47 ms/step (512×512, single L40S GPU), over 3× faster than these baselines while maintaining SOTA performance across seven benchmarks on both natural and portrait scenes. Representatively, PixelHacker achieves FID 0.82 / LPIPS 0.088 on Places2 with 13% and 11% improvements, and FID 6.35 / LPIPS 0.229 on FFHQ with 43% and 15% improvements. This work establishes a principled and interpretable foundation for efficient, consistent, and general-purpose image inpainting.
                 </p>
               </td>
             </tr>
