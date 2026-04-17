@@ -133,3 +133,56 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+@media (max-width: 768px) {
+  .intro-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-row td {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .intro-text {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+  }
+
+  .intro-text .name {
+    padding-top: 8px;
+    font-size: clamp(28px, 8vw, 34px);
+    line-height: 1.15;
+    letter-spacing: 0.2px;
+  }
+
+  .intro-text p {
+    margin: 0 0 12px 0;
+    line-height: 1.7;
+  }
+
+  .intro-text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .profile-cell {
+    order: -1;
+    text-align: center;
+    padding-top: 4px !important;
+    padding-bottom: 6px !important;
+  }
+
+  .profile-image {
+    display: block;
+    width: clamp(136px, 42vw, 188px) !important;
+    max-width: 188px !important;
+    min-width: 136px;
+    margin: 0 auto;
+    border-radius: 10% !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+}
