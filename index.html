@@ -39,10 +39,13 @@
 				  <!-- <a href="https://www.threads.net/@jonbarron">Threads</a> &nbsp;/&nbsp; -->
 				  <!-- <a href="https://bsky.app/profile/jonbarron.bsky.social">Bluesky</a> &nbsp;/&nbsp; -->
                   <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp; -->
-                  <a href="https://github.com/ZyoungXu/">Github</a>
+                  <a href="https://github.com/ZyoungXu/">Github</a> &nbsp;|&nbsp;
+                  <a href="https://space.bilibili.com/11139404">Bilibili</a> &nbsp;|&nbsp;
+                  <a href="https://x.com/ZyoungXu">X</a> &nbsp;|&nbsp;
+                  <a href="https://www.xiaohongshu.com/user/profile/6686dd4e000000000f037feb">RedNote</a>
                 </p>
                 <p style="text-align:center">
-                Latest Update: March 11, 2026
+                Latest Update: June 22, 2026
                 </p>
               </td>
               <td class="profile-cell" style="padding:2.5%;width:18%;max-width:25%">
@@ -61,6 +64,60 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+            <tr class="moebius-row" onmouseout="Moebius_stop()" onmouseover="Moebius_start()" bgcolor="#ffffd0">
+              <td style="padding:20px;width:20%;vertical-align:middle">
+                <div class="one moebius-preview">
+                  <div class="two" id='Moebius_image'>
+                    <img src='images/Moebius_after_demo.gif' width=110%>
+                  </div>
+                  <img id='Moebius_base_image' src='images/Moebius.png' width=110%>
+                </div>
+                <script type="text/javascript">
+                  function Moebius_start() {
+                    document.getElementById('Moebius_image').style.opacity = "1";
+                    document.getElementById('Moebius_base_image').style.opacity = "0";
+                  }
+                  function Moebius_stop() {
+                    document.getElementById('Moebius_image').style.opacity = "0";
+                    document.getElementById('Moebius_base_image').style.opacity = "1";
+                  }
+                  Moebius_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:80%;vertical-align:middle">
+                  <span class="papertitle">
+                    <a href="https://arxiv.org/abs/2606.19195" style="font-family: 'Playfair Display'; font-size:9px;">
+                      <h1 style="font-weight:700;">Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance</h1>
+                    </a>
+                  </span>
+                <t>
+                  <h1 style="font-size:16px;">
+                    <em> European Conference on Computer Vision (ECCV), 2026</em>
+                    <br>
+                    <a href="https://arxiv.org/abs/2606.19195">Paper</a>
+                    /
+                    <a href="https://github.com/hustvl/Moebius">Code</a>
+                    /
+                    <a href="https://hustvl.github.io/Moebius/">Project Page</a>
+                  </h1>
+                </t>
+            Kangsheng Duan*,
+            <strong>Ziyang Xu*<sup>,†</sup></strong>,
+            <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+            Xiaohu Ruan,
+            Xiaoxin Chen,
+            <a href="https://xwcv.github.io/">Xinggang Wang</a>
+                <br>
+                <strong>* Equal Contribution</strong>, <strong><sup>†</sup> Project Leader</strong>
+                <br>
+                ⚑ <em>This work was done when Ziyang Xu and Kangsheng Duan were interning at VIVO AI Lab.</em>
+                <p>
+                Moebius continues our previous exploration in PixelHacker and asks a simple question beyond the scaling-law race: is making models larger the only path toward high-quality image inpainting? Targeting general-purpose object removal and image inpainting, Moebius jointly optimizes compact architecture design and knowledge distillation to break the usual trade-off among small parameter count, fast inference, and high-fidelity generation. With only 0.22B parameters, it matches or surpasses 10B-level industrial SOTA models such as FLUX.1-Fill-Dev across six natural and portrait benchmarks, while delivering more than 15x faster total inference. This work suggests that when the task is well defined, inpainting models can be smarter, lighter, and faster.
+                </p>
+              </td>
+            </tr>
 
 
             <tr onmouseout="GenDSAv2_stop()" onmouseover="GenDSAv2_start()" bgcolor="#ffffd0">
@@ -134,7 +191,7 @@
             <a href="https://xwcv.github.io/">Xinggang Wang</a>,
             <a href="https://scholar.google.com/citations?user=abn37yYAAAAJ&hl=zh-CN&oi=ao">Chuansheng Zheng</a>
                 <br>
-                <strong>* equal contribution</strong>
+                <strong>* Equal Contribution</strong>
                 <p>
                 Through retrospective analyses and iterative system upgrades, we developed GenDSA-v2, which is, to the best of our knowledge, the largest and most comprehensive low-dose imaging system to date. Leveraging a multi-center cohort of 50,000 patients from 86 hospitals worldwide, collected in collaboration with major international vendors (GE, Philips, and Siemens), we demonstrate that GenDSA-v2 achieves a threefold reduction in radiation dose without compromising diagnostic or interventional performance. Its clinical effectiveness and safety were further validated through animal studies and prospective evaluations, including cross-over observational trials and randomized controlled studies, confirming that GenDSA-v2 maintains sufficient image fidelity to visualize lesions as small as 1 mm.
                 </p>
@@ -193,7 +250,7 @@
             <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
             <a href="https://xwcv.github.io/">Xinggang Wang</a>
                 <br>
-                <strong>* equal contribution</strong>
+                <strong>* Equal Contribution</strong>
                 <p>
                 Genesis is a unified framework for joint generation of multi-view driving videos and LiDAR sequences with spatio-temporal and cross-modal consistency. Genesis employs a two-stage architecture that integrates a DiT-based video diffusion model with 3D-VAE encoding, and a BEV-aware LiDAR generator with NeRF-based rendering and adaptive sampling. Both modalities are directly coupled through a shared latent space, enabling coherent evolution across visual and geometric domains. Extensive experiments on the nuScenes benchmark demonstrate that Genesis achieves SOTA performance across video and LiDAR metrics (FVD 16.95, FID 4.24, Chamfer 0.611), and benefits downstream tasks including segmentation and 3D detection, validating the semantic fidelity and practical utility of the generated data.
                 </p>
@@ -247,7 +304,7 @@
             <a href="https://scholar.google.com/citations?hl=zh-CN&user=SI_oBwsAAAAJ">Xiaoxin Chen</a>,
             <a href="https://xwcv.github.io/">Xinggang Wang</a>
                 <br>
-                ⚑ <em>This work was done when Ziyang Xu and Kangsheng Duan were interning at VIVO.</em>
+                ⚑ <em>This work was done when Ziyang Xu and Kangsheng Duan were interning at VIVO AI Lab.</em>
                 <p>
                 PixelHacker is a purely visual and general inpainting framework. Its core lies in a new paradigm named Latent Categories Guidance (LCG), which introduces category-level latent semantic distribution to guide latent space for structural and semantic consistent denoising. PixelHacker achieves 0.86B parameters—only 7% and 11% of Flux.1-Fill-dev and SD3.5 Large-Inpainting—running at 47 ms/step (512×512, single L40S GPU), over 3× faster than these baselines while maintaining SOTA performance across seven benchmarks on both natural and portrait scenes. Representatively, PixelHacker achieves FID 0.82 / LPIPS 0.088 on Places2 with 13% and 11% improvements, and FID 6.35 / LPIPS 0.229 on FFHQ with 43% and 15% improvements. This work establishes a principled and interpretable foundation for efficient, consistent, and general-purpose image inpainting.
                 </p>
