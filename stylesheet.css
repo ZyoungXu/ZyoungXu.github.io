@@ -165,6 +165,87 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+.resume-block {
+  margin-top: 0;
+  margin-bottom: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.resume-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.resume-column-right {
+  border-top: 0;
+}
+
+.resume-note {
+  margin-top: -2px;
+  margin-bottom: 12px;
+}
+
+.resume-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 9px;
+  color: #444;
+  font-size: 12px;
+  line-height: 1.4;
+  background: #fff4ef;
+  border: 1px solid #f0d2c8;
+  border-radius: 999px;
+}
+
+.resume-emphasis {
+  color: #c00000;
+  font-weight: 700;
+}
+
+.resume-flag {
+  font-size: 0.75em;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.resume-icon {
+  background: transparent;
+}
+
+.resume-subnote {
+  margin-top: 6px;
+  padding: 6px 10px;
+  color: #444;
+  background: #f5f5f5;
+  border-left: 3px solid #d8d8d8;
+  border-radius: 4px;
+}
+
+.resume-entry {
+  position: relative;
+  padding-left: 1em;
+  margin-bottom: 8px;
+  line-height: 1.55;
+}
+
+.resume-entry::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+}
+
+.resume-entry:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   .intro-row {
     display: flex;
@@ -215,5 +296,13 @@ span.highlight {
     margin: 0 auto;
     border-radius: 10% !important;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  .resume-column-right {
+    border-top: 0;
+  }
+
+  .resume-block {
+    border-radius: 14px;
   }
 }
