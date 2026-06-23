@@ -16,6 +16,11 @@
   </head>
 
   <body>
+    <nav class="site-nav" aria-label="Section navigation">
+      <a href="#research" class="active">Research</a>
+      <a href="#competition">Competition</a>
+      <a href="#honors">Honors</a>
+    </nav>
     <table style="width:100%;max-width:1100px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -56,7 +61,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
+                <h2 id="research">Research</h2>
                 <p>
                   My scholarly interests revolve around the fields of <strong>Artificial General Intelligence, Computer Vision, Image/Video Generation, Medical Image Analysis</strong>, and <strong>Object Detection/Segmentation</strong>. Representative papers are <span class="highlight">highlighted</span>.
                 </p>
@@ -546,7 +551,7 @@
             <tr>
               <td class="resume-column" style="padding:20px;width:100%;vertical-align:top">
 
-                <h2 class="resume-title">Competition Experience</h2>
+                <h2 id="competition" class="resume-title">Competition Experience</h2>
                 <div class="resume-note"><span class="resume-legend"><sup class="resume-flag">🚩</sup>: Team leader; ranking first</span></div>
                 <div class="resume-entry">
                   <div><sup class="resume-flag">🚩</sup> The 20th Innovation Cup College Students Extracurricular Academic Science and Technology Works Competition (创新杯大学生课外学术科技作品竞赛), <span class="resume-emphasis">Special Prize (特等奖)</span> in the Mathematical Information Group (数理信息组), 2020.</div>
@@ -570,7 +575,7 @@
             <tr>
               <td class="resume-column resume-column-right" style="padding:20px;width:100%;vertical-align:top">
 
-                <h2 class="resume-title">Selected Honors &amp; Awards</h2>
+                <h2 id="honors" class="resume-title">Selected Honors &amp; Awards</h2>
                 <div class="resume-entry">
                   <span class="resume-emphasis">National Scholarship for Master Student (国家硕士生奖学金)</span>, 2024.
                   <div class="resume-subnote"><span class="resume-icon">🏆</span> The most prestigious honor for university students in China, awarded to only <span class="resume-emphasis">0.2%</span> of candidates nationwide.</div>
@@ -596,7 +601,7 @@
 
           <br>
 
-          <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=2d78ad&w=480&t=tt&d=WbjemnXwFa9drIuorCaE_2YGHaQCnVCsuV97d4pMBZk&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
+          <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=2d78ad&w=720&t=tt&d=WbjemnXwFa9drIuorCaE_2YGHaQCnVCsuV97d4pMBZk&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
 
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -612,5 +617,43 @@
         </td>
       </tr>
     </table>
+    <script type="text/javascript">
+      (function () {
+        var sectionIds = ["research", "competition", "honors"];
+        var navLinks = Array.prototype.slice.call(document.querySelectorAll(".site-nav a"));
+        var sections = sectionIds.map(function (id) {
+          return document.getElementById(id);
+        }).filter(Boolean);
+
+        function setActive(id) {
+          navLinks.forEach(function (link) {
+            link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+          });
+        }
+
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", function () {
+            setActive(link.getAttribute("href").slice(1));
+          });
+        });
+
+        if ("IntersectionObserver" in window) {
+          var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                setActive(entry.target.id);
+              }
+            });
+          }, {
+            rootMargin: "-35% 0px -55% 0px",
+            threshold: 0
+          });
+
+          sections.forEach(function (section) {
+            observer.observe(section);
+          });
+        }
+      }());
+    </script>
   </body>
 </html>

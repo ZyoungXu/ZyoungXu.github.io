@@ -74,6 +74,10 @@ a:hover {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 td,
 th,
@@ -94,6 +98,48 @@ h2 {
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
+}
+
+#research,
+#competition,
+#honors {
+  scroll-margin-top: 88px;
+}
+
+.site-nav {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 7px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(216, 216, 216, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.site-nav a {
+  display: block;
+  padding: 5px 8px;
+  color: #444;
+  font-size: 12px;
+  line-height: 1.2;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.site-nav a:hover {
+  color: #f09228;
+}
+
+.site-nav a.active {
+  color: #c00000;
+  font-weight: 700;
+  background: #fff4ef;
 }
 
 .papertitle {
@@ -247,6 +293,33 @@ span.highlight {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 44px;
+  }
+
+  #research,
+  #competition,
+  #honors {
+    scroll-margin-top: 64px;
+  }
+
+  .site-nav {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 5px;
+    border-radius: 7px;
+  }
+
+  .site-nav a {
+    padding: 4px 7px;
+    font-size: 11px;
+  }
+
   .intro-row {
     display: flex;
     flex-direction: column;
