@@ -18,8 +18,8 @@
   <body>
     <nav class="site-nav" aria-label="Section navigation">
       <a href="#research" class="active">Research</a>
-      <a href="#competition">Competition</a>
-      <a href="#honors">Honors</a>
+      <a href="#competition">Competition Experience</a>
+      <a href="#honors">Selected Honors &amp; Awards</a>
     </nav>
     <table style="width:100%;max-width:1100px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
@@ -637,22 +637,50 @@
           });
         });
 
-        if ("IntersectionObserver" in window) {
-          var observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-              if (entry.isIntersecting) {
-                setActive(entry.target.id);
-              }
-            });
-          }, {
-            rootMargin: "-35% 0px -55% 0px",
-            threshold: 0
+        var ticking = false;
+
+        function getScrollOffset() {
+          return window.matchMedia("(max-width: 768px)").matches ? 80 : 120;
+        }
+
+        function updateActiveSection() {
+          if (!sections.length) {
+            ticking = false;
+            return;
+          }
+
+          var currentId = sections[0].id;
+          var position = window.pageYOffset + getScrollOffset();
+          var sectionPositions = sections.map(function (section) {
+            return {
+              id: section.id,
+              top: section.getBoundingClientRect().top + window.pageYOffset
+            };
           });
 
-          sections.forEach(function (section) {
-            observer.observe(section);
+          sectionPositions.forEach(function (section) {
+            if (position >= section.top) {
+              currentId = section.id;
+            }
           });
+
+          if (currentId) {
+            setActive(currentId);
+          }
+
+          ticking = false;
         }
+
+        function requestActiveUpdate() {
+          if (!ticking) {
+            ticking = true;
+            window.requestAnimationFrame(updateActiveSection);
+          }
+        }
+
+        updateActiveSection();
+        window.addEventListener("scroll", requestActiveUpdate, { passive: true });
+        window.addEventListener("resize", requestActiveUpdate);
       }());
     </script>
   </body>
