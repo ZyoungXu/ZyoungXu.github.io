@@ -100,6 +100,7 @@ h2 {
   font-size: 22px;
 }
 
+#highlight,
 #research,
 #competition,
 #honors {
@@ -217,6 +218,29 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+.highlight-list {
+  margin-top: 1em;
+}
+
+.highlight-entry {
+  position: relative;
+  padding-left: 1em;
+  margin-bottom: 8px;
+  line-height: 1.55;
+}
+
+.highlight-entry::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+}
+
+.highlight-entry:last-child {
+  margin-bottom: 0;
+}
+
 .resume-block {
   margin-top: 0;
   margin-bottom: 0;
@@ -303,6 +327,7 @@ span.highlight {
     padding-top: 44px;
   }
 
+  #highlight,
   #research,
   #competition,
   #honors {

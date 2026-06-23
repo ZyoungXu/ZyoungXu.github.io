@@ -17,7 +17,8 @@
 
   <body>
     <nav class="site-nav" aria-label="Section navigation">
-      <a href="#research" class="active">Research</a>
+      <a href="#highlight" class="active">Highlight</a>
+      <a href="#research">Research</a>
       <a href="#competition">Competition Experience</a>
       <a href="#honors">Selected Honors &amp; Awards</a>
     </nav>
@@ -55,6 +56,19 @@
               </td>
               <td class="profile-cell" style="padding:2.5%;width:18%;max-width:25%">
                 <a href="images/xzy0403.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 6%;" alt="profile photo" src="images/xzy0403.jpg" class="hoverZoomLink profile-image"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2 id="highlight">Highlight</h2>
+                <div class="highlight-list">
+                  <div class="highlight-entry">As of June 24, 2026, my open-source code on GitHub has received <span class="resume-emphasis">900+ stars</span> in total, with a single project reaching <span class="resume-emphasis">570+ stars</span>; my highest single-paper journal impact factor has reached <span class="resume-emphasis">52.5</span>.</div>
+                  <div class="highlight-entry">My image inpainting research series, including <span class="resume-emphasis">PixelHacker</span> and <span class="resume-emphasis">Moebius</span>, both achieved the <span class="resume-emphasis">No. 1 daily ranking</span> on Hugging Face.</div>
+                  <div class="highlight-entry">An early quantized image inpainting algorithm that I explored with VIVO AI Lab before Moebius/PixelHacker has been deployed in the photo albums of the <span class="resume-emphasis">VIVO X200</span> and <span class="resume-emphasis">iQOO 11</span> series phones, under AI Retouching → AI Eraser. Feel free to try it when taking photos outdoors ~ 😉</div>
+                  <div class="highlight-entry">My multi-frame generation × medical DSA (Digital Subtraction Angiography) research series, represented by <span class="resume-emphasis">GenDSAv2</span> and including MoSt-DSA, GaraMoSt, GenDSA, and GenDSAv2, has been approved as part of a <span class="resume-emphasis">National Key R&amp;D Program of China (China's highest level R&amp;D project)</span> and has entered large-scale clinical validation (Chinese Clinical Trial Registry: ChiCTR2400084789). More than <span class="resume-emphasis">100,000 patients</span> worldwide undergo DSA procedures every day; rigorous randomized controlled trial has shown that GenDSAv2 can help reduce radiation exposure for doctors and patients by <span class="resume-emphasis">two-thirds</span>.</div>
+                </div>
               </td>
             </tr>
           </tbody></table>
@@ -619,7 +633,7 @@
     </table>
     <script type="text/javascript">
       (function () {
-        var sectionIds = ["research", "competition", "honors"];
+        var sectionIds = ["highlight", "research", "competition", "honors"];
         var navLinks = Array.prototype.slice.call(document.querySelectorAll(".site-nav a"));
         var sections = sectionIds.map(function (id) {
           return document.getElementById(id);
