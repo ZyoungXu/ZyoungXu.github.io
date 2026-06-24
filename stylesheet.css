@@ -104,7 +104,8 @@ h2 {
 #research,
 #internship,
 #competition,
-#honors {
+#honors,
+#services {
   scroll-margin-top: 88px;
 }
 
@@ -373,7 +374,8 @@ span.highlight {
   #research,
   #internship,
   #competition,
-  #honors {
+  #honors,
+  #services {
     scroll-margin-top: 64px;
   }
 
