@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&amp;display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon/favicon_32.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260901-2">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260901-4">
 
   </head>
 
@@ -28,9 +28,9 @@
       <a href="#highlight" class="active">Highlight</a>
       <a href="#research">Research</a>
       <a href="#internship">Internship</a>
-      <a href="#competition">Competition Experience</a>
-      <a href="#honors">Selected Honors &amp; Awards</a>
-      <a href="#services">Academic Services</a>
+      <a href="#honors">Honors &amp; Awards</a>
+      <a href="#competition">Competitions</a>
+      <a href="#services">Academic Service</a>
     </nav>
     <table class="site-content" style="width:100%;max-width:1100px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
@@ -87,492 +87,251 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
+            <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2 id="research">Research</h2>
                 <p>
-                  My published research works revolve around the fields of <strong>Visual Generation (Image Inpainting, Multi-Frame Generation, Video Generation), Visual Perception (Video Object Detection)</strong>, and <strong>AI for Science</strong>. Representative papers are <span class="highlight">highlighted</span>. There are also some unpublished papers related to representation learning and memory modeling of visual features, so stay tuned. Currently, my research interests focus on generative AI. From a long-term and idealistic perspective, I'm very interested in Artificial General Intelligence.
+                  My research spans visual generation, efficient multimodal models, visual perception and memory, and AI for science, with a particular emphasis on generative AI and medical imaging. Publications are grouped by research theme; my name is bolded, * denotes equal contribution, and † denotes project leadership.
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table class="research-list" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-
-            <tr class="moebius-row" onmouseout="Moebius_stop()" onmouseover="Moebius_start()" bgcolor="#ffffd0">
-              <td style="padding:20px;width:20%;vertical-align:middle">
-                <div class="one moebius-preview">
-                  <div class="two" id='Moebius_image'>
-                    <img src='images/Moebius_after_demo.gif' width=110%>
-                  </div>
-                  <img id='Moebius_base_image' src='images/Moebius.png' width=110%>
-                </div>
-                <script type="text/javascript">
-                  function Moebius_start() {
-                    document.getElementById('Moebius_image').style.opacity = "1";
-                    document.getElementById('Moebius_base_image').style.opacity = "0";
-                  }
-                  function Moebius_stop() {
-                    document.getElementById('Moebius_image').style.opacity = "0";
-                    document.getElementById('Moebius_base_image').style.opacity = "1";
-                  }
-                  Moebius_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:80%;vertical-align:middle">
-                  <span class="papertitle">
-                    <a href="https://arxiv.org/abs/2606.19195" style="font-family: 'Playfair Display'; font-size:9px;">
-                      <h1 style="font-weight:700;">Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance</h1>
-                    </a>
-                  </span>
-                <t>
-                  <h1 style="font-size:16px;">
-                    <em> European Conference on Computer Vision (ECCV), 2026</em>
-                    <br>
-                    <a href="https://arxiv.org/abs/2606.19195">Paper</a>
-                    /
-                    <a href="https://github.com/hustvl/Moebius">Code</a>
-                    /
-                    <a href="https://hustvl.github.io/Moebius/">Project Page</a>
-                  </h1>
-                </t>
-            Kangsheng Duan*,
-            <strong>Ziyang Xu*<sup>,†</sup></strong>,
-            <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
-            Xiaohu Ruan,
-            Xiaoxin Chen,
-            <a href="https://xwcv.github.io/">Xinggang Wang</a>
-                <br>
-                <strong>* Equal Contribution</strong>, <strong><sup>†</sup> Project Leader</strong>
-                <br>
-                ⚑ <em>This work was done when Ziyang Xu and Kangsheng Duan were interning at VIVO AI Lab.</em>
-                <p>
-                Moebius continues our previous exploration in PixelHacker and asks a simple question beyond the scaling-law race: is making models larger the only path toward high-quality image inpainting? Targeting general-purpose object removal and image inpainting, Moebius jointly optimizes compact architecture design and knowledge distillation to break the usual trade-off among small parameter count, fast inference, and high-fidelity generation. With only 0.22B parameters, it matches or surpasses 10B-level industrial SOTA models such as FLUX.1-Fill-Dev across six natural and portrait benchmarks, while delivering more than 15x faster total inference. This work suggests that when the task is well defined, inpainting models can be smarter, lighter, and faster.
-                </p>
+            <tr class="research-theme-row">
+              <td colspan="2">
+                <h3>Efficient Visual Generation and Image Inpainting</h3>
+                <p>I develop image generation systems that balance high-quality synthesis and structural-semantic consistency with practical model efficiency.</p>
               </td>
             </tr>
 
-
-            <tr onmouseout="GenDSAv2_stop()" onmouseover="GenDSAv2_start()" bgcolor="#ffffd0">
-              <td style="padding:20px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <!-- <div class="two" id='GenDSA_image'><video  width=100% muted autoplay loop>
-                  <source src="videos/GenDSA.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video></div> -->
-                  <div class="two" id='GenDSAv2_image'>
-                    <img src='images/GenDSAv2_after.png' width=110%>
-                  </div>
-                  <img src='images/GenDSAv2.png' width=110%>
+            <tr class="research-card">
+              <td class="research-media-cell">
+                <div class="research-preview" role="group" tabindex="0" aria-label="Moebius image inpainting comparison">
+                  <img class="research-preview-image research-preview-base" src="images/Moebius.png" alt="Input example for Moebius image inpainting" width="2819" height="1733" loading="lazy" decoding="async">
+                  <img class="research-preview-image research-preview-hover" src="images/Moebius_after_demo.gif" alt="Moebius image inpainting result" width="1280" height="720" loading="lazy" decoding="async">
                 </div>
-                <script type="text/javascript">
-                  function GenDSAv2_start() {
-                    document.getElementById('GenDSAv2_image').style.opacity = "1";
-                  }
-                  function GenDSAv2_stop() {
-                    document.getElementById('GenDSAv2_image').style.opacity = "0";
-                  }
-                  GenDSAv2_stop()
-                </script>
               </td>
-              <td style="padding:20px;width:80%;vertical-align:middle">
-                <!-- 论文标题 -->
-                  <span class="papertitle">
-                    <a href="https://www.nature.com/articles/s41591-025-04042-6" style="font-family: 'Playfair Display'; font-size:9px;">
-                      <h1 style="font-weight:700;">Generative AI-based Low-Dose Digital Subtraction Angiography for Intraoperative Radiation Dose Reduction: a Randomized Controlled Trial</h1>
-                    </a>
-                  </span>
-                <!-- 期刊/会议名称 + paper/code/project page -->
-                <t>
-                  <h1 style="font-size:16px;">
-                    <em> Nature Medicine, 2026 (IF 52.5) </em>
-                    <br>
-                    <a href="https://www.nature.com/articles/s41591-025-04042-6.pdf">Paper</a>
-                /
-                <a href="https://github.com/ZyoungXu/GenDSA">Code</a>
-                  </h1>
-                </t>
-            Huangxuan Zhao*,
-            Yaowei  Bai*,
-            Lei Chen*,
-            Jinqiang Ma*,
-            Yu Lei*,
-            Tao Sun,
-            Linxia Wu,
-            Ruiheng Zhang,
-            <strong>Ziyang Xu</strong>,
-            Xiaoyun Liang,
-            Yi Li,
-            Yan Huang,
-            Yun Feng,
-            Cheng Hong,
-            Zhongrong Miao,
-            Lin Long,
-            Haidong Zhu,
-            Jiahe Zheng,
-            Lin Fan,
-            Zhuting Fang,
-            Peng Dong,
-            Lefei Zhang,
-            Xiaoyu Han,
-            Bin Wang,
-            Bin Liang,
-            Xiangwen Xia,
-            Xuefeng Kan,
-            Chengcheng Zhu,
-            Bo Du,
-            <a href="https://xwcv.github.io/">Xinggang Wang</a>,
-            <a href="https://scholar.google.com/citations?user=abn37yYAAAAJ&hl=zh-CN&oi=ao">Chuansheng Zheng</a>
-                <br>
-                <strong>* Equal Contribution</strong>
-                <p>
-                Through retrospective analyses and iterative system upgrades, we developed GenDSA-v2, which is, to the best of our knowledge, the largest and most comprehensive low-dose imaging system to date. Leveraging a multi-center cohort of 50,000 patients from 86 hospitals worldwide, collected in collaboration with major international vendors (GE, Philips, and Siemens), we demonstrate that GenDSA-v2 achieves a threefold reduction in radiation dose without compromising diagnostic or interventional performance. Its clinical effectiveness and safety were further validated through animal studies and prospective evaluations, including cross-over observational trials and randomized controlled studies, confirming that GenDSA-v2 maintains sufficient image fidelity to visualize lesions as small as 1 mm.
-                </p>
+              <td class="research-detail-cell">
+                <span class="representative-badge">Representative Work</span>
+                <h4 class="paper-title"><a href="https://arxiv.org/abs/2606.19195">Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance</a></h4>
+                <div class="paper-meta">
+                  <div class="paper-venue"><em>European Conference on Computer Vision (ECCV), 2026</em></div>
+                  <div class="paper-links"><a href="https://arxiv.org/abs/2606.19195">Paper</a> / <a href="https://github.com/hustvl/Moebius">Code</a> / <a href="https://hustvl.github.io/Moebius/">Project</a></div>
+                </div>
+                <div class="paper-authors">
+                  Kangsheng Duan*,
+                  <strong>Ziyang Xu*<sup>†</sup></strong>,
+                  <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+                  Xiaohu Ruan,
+                  Xiaoxin Chen,
+                  <a href="https://xwcv.github.io/">Xinggang Wang</a>
+                </div>
+                <div class="paper-contribution">* Equal contribution; <sup>†</sup> project leadership</div>
+                <div class="paper-role"><strong>Role:</strong> Co-first Author · Project Lead</div>
+                <div class="paper-note"><em>This work was completed while Ziyang Xu and Kangsheng Duan were research interns at vivo AI Lab.</em></div>
+                <p>Moebius extends the PixelHacker line of work by asking whether high-quality image inpainting requires continued model scaling. It combines a compact architecture with knowledge distillation, using only 0.22B parameters—less than 2% of FLUX.1-Fill-Dev—while matching or surpassing it across six natural and portrait benchmarks and reducing total inference time by more than 15×.</p>
               </td>
             </tr>
 
-
-<tr onmouseout="Genesis_stop()" onmouseover="Genesis_start()">
-              <td style="padding:20px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='Genesis_image'>
-                    <img src='images/Genesis_after_demo.gif' width=110%>
-                  </div>
-                  <img src='images/Genesis.png' width=110%>
+            <tr class="research-card">
+              <td class="research-media-cell">
+                <div class="research-preview" role="group" tabindex="0" aria-label="PixelHacker image inpainting comparison">
+                  <img class="research-preview-image research-preview-base" src="images/PixelHacker_before.png" alt="Input example for PixelHacker image inpainting" width="1467" height="488" loading="lazy" decoding="async">
+                  <img class="research-preview-image research-preview-hover" src="images/PixelHacker_after_demo.gif" alt="PixelHacker image inpainting result" width="640" height="640" loading="lazy" decoding="async">
                 </div>
-                <script type="text/javascript">
-                  function Genesis_start() {
-                    document.getElementById('Genesis_image').style.opacity = "1";
-                  }
-                  function Genesis_stop() {
-                    document.getElementById('Genesis_image').style.opacity = "0";
-                  }
-                  Genesis_stop()
-                </script>
               </td>
-              <td style="padding:20px;width:80%;vertical-align:middle">
-                <!-- 论文标题 -->
-                  <span class="papertitle">
-                    <a href="https://arxiv.org/abs/2506.07497" style="font-family: 'Playfair Display'; font-size:9px;">
-                      <h1 style="font-weight:700;">Genesis: Multimodal Driving Scene Generation with Spatio-Temporal and Cross-Modal Consistency</h1>
-                    </a>
-                  </span>
-                <!-- 期刊/会议名称 + paper/code/project page -->
-                <t>
-                  <h1 style="font-size:16px;">
-                    <em> Conference on Neural Information Processing Systems (NeurIPS), 2025</em>
-                    <br>
-                    <a href="https://arxiv.org/abs/2506.07497">Paper</a>
-                    /
-                    <a href="https://github.com/xiaomi-research/genesis">Code</a>
-                    /
-                    <a href="https://xiaomi-research.github.io/genesis/">Project Page</a>
-                  </h1>
-                </t>
-            Xiangyu Guo*,
-            Zhanqian Wu*,
-            Kaixin Xiong*,
-            <strong>Ziyang Xu</strong>,
-            Lijun Zhou,
-            Gangwei Xu,
-            Shaoqing Xu,
-            Haiyang Sun,
-            Bing Wang,
-            Guang Chen,
-            Hangjun Ye,
-            <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
-            <a href="https://xwcv.github.io/">Xinggang Wang</a>
-                <br>
-                <strong>* Equal Contribution</strong>
-                <p>
-                Genesis is a unified framework for joint generation of multi-view driving videos and LiDAR sequences with spatio-temporal and cross-modal consistency. Genesis employs a two-stage architecture that integrates a DiT-based video diffusion model with 3D-VAE encoding, and a BEV-aware LiDAR generator with NeRF-based rendering and adaptive sampling. Both modalities are directly coupled through a shared latent space, enabling coherent evolution across visual and geometric domains. Extensive experiments on the nuScenes benchmark demonstrate that Genesis achieves SOTA performance across video and LiDAR metrics (FVD 16.95, FID 4.24, Chamfer 0.611), and benefits downstream tasks including segmentation and 3D detection, validating the semantic fidelity and practical utility of the generated data.
-                </p>
+              <td class="research-detail-cell">
+                <span class="representative-badge">Representative Work</span>
+                <h4 class="paper-title"><a href="https://arxiv.org/abs/2504.20438">PixelHacker: Image Inpainting with Structural and Semantic Consistency</a></h4>
+                <div class="paper-meta">
+                  <div class="paper-venue"><em>arXiv preprint, 2025</em> <span class="paper-status">Extended manuscript under review</span></div>
+                  <div class="paper-links"><a href="https://arxiv.org/abs/2504.20438">Paper</a> / <a href="https://github.com/hustvl/PixelHacker">Code</a> / <a href="https://hustvl.github.io/PixelHacker">Project</a></div>
+                </div>
+                <div class="paper-authors">
+                  <strong>Ziyang Xu<sup>†</sup></strong>,
+                  Kangsheng Duan,
+                  Xiaolei Shen,
+                  Zhifeng Ding,
+                  <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+                  Xiaohu Ruan,
+                  <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=SI_oBwsAAAAJ">Xiaoxin Chen</a>,
+                  <a href="https://xwcv.github.io/">Xinggang Wang</a>
+                </div>
+                <div class="paper-contribution"><sup>†</sup> Project leadership</div>
+                <div class="paper-role"><strong>Role:</strong> First Author · Project Lead</div>
+                <div class="paper-note"><em>This work was completed while Ziyang Xu and Kangsheng Duan were research interns at vivo AI Lab.</em></div>
+                <p>PixelHacker introduces Latent Categories Guidance (LCG), which separately models foreground and background semantic distributions and injects them into diffusion-based denoising. Trained with 14 million image-mask pairs, it improves structural and semantic consistency across natural and portrait inpainting benchmarks while remaining substantially smaller and faster than large industrial baselines.</p>
               </td>
             </tr>
 
-
-            <tr onmouseout="PixelHacker_stop()" onmouseover="PixelHacker_start()" bgcolor="#ffffd0">
-              <td style="padding:20px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='PixelHacker_image'>
-                    <img src='images/PixelHacker_after_demo.gif' width=110%>
-                  </div>
-                  <img src='images/PixelHacker_before.png' width=110%>
-                </div>
-                <script type="text/javascript">
-                  function PixelHacker_start() {
-                    document.getElementById('PixelHacker_image').style.opacity = "1";
-                  }
-                  function PixelHacker_stop() {
-                    document.getElementById('PixelHacker_image').style.opacity = "0";
-                  }
-                  PixelHacker_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:80%;vertical-align:middle">
-                <!-- 论文标题 -->
-                  <span class="papertitle">
-                    <a href="https://arxiv.org/abs/2504.20438" style="font-family: 'Playfair Display'; font-size:9px;">
-                      <h1 style="font-weight:700;">PixelHacker: Image Inpainting with Structural and Semantic Consistency</h1>
-                    </a>
-                  </span>
-                <!-- 期刊/会议名称 + paper/code/project page -->
-                <t>
-                  <h1 style="font-size:16px;">
-                    <em> arXiv preprint, 2025</em>
-                    <br>
-                    <a href="https://arxiv.org/abs/2504.20438">Paper</a>
-                    /
-                    <a href="https://github.com/hustvl/PixelHacker">Code</a>
-                    /
-                    <a href="https://hustvl.github.io/PixelHacker">Project Page</a>
-                  </h1>
-                </t>
-            <strong>Ziyang Xu</strong>,
-            <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&hl=zh-CN&oi=ao">Kangsheng Duan</a>,
-            Xiaolei Shen,
-            Zhifeng Ding,
-            <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
-            Xiaohu Ruan,
-            <a href="https://scholar.google.com/citations?hl=zh-CN&user=SI_oBwsAAAAJ">Xiaoxin Chen</a>,
-            <a href="https://xwcv.github.io/">Xinggang Wang</a>
-                <br>
-                ⚑ <em>This work was done when Ziyang Xu and Kangsheng Duan were interning at VIVO AI Lab.</em>
-                <p>
-                PixelHacker is a purely visual and general inpainting framework. Its core lies in a new paradigm named Latent Categories Guidance (LCG), which introduces category-level latent semantic distribution to guide latent space for structural and semantic consistent denoising. PixelHacker achieves 0.86B parameters—only 7% and 11% of Flux.1-Fill-dev and SD3.5 Large-Inpainting—running at 47 ms/step (512×512, single L40S GPU), over 3× faster than these baselines while maintaining SOTA performance across seven benchmarks on both natural and portrait scenes. Representatively, PixelHacker achieves FID 0.82 / LPIPS 0.088 on Places2 with 13% and 11% improvements, and FID 6.35 / LPIPS 0.229 on FFHQ with 43% and 15% improvements. This work establishes a principled and interpretable foundation for efficient, consistent, and general-purpose image inpainting.
-                </p>
+            <tr class="research-theme-row">
+              <td colspan="2">
+                <h3>Generative Low-Dose DSA Imaging</h3>
+                <p>This research line progresses from direct multi-frame interpolation and efficient generation to large-scale pretraining, multi-center validation, and prospective randomized clinical evaluation.</p>
               </td>
             </tr>
 
+            <tr class="research-card">
+              <td class="research-media-cell">
+                <div class="research-preview" role="group" tabindex="0" aria-label="GenDSA-V2 low-dose DSA comparison">
+                  <img class="research-preview-image research-preview-base" src="images/GenDSAv2.png" alt="Standard DSA image used for comparison with GenDSA-V2" width="2382" height="1108" loading="lazy" decoding="async">
+                  <img class="research-preview-image research-preview-hover" src="images/GenDSAv2_after.png" alt="Low-dose DSA image generated by GenDSA-V2" width="1202" height="1087" loading="lazy" decoding="async">
+                </div>
+              </td>
+              <td class="research-detail-cell">
+                <span class="representative-badge">Representative Work</span>
+                <h4 class="paper-title"><a href="https://www.nature.com/articles/s41591-025-04042-6">Generative AI-based low-dose digital subtraction angiography for intra-operative radiation dose reduction: a randomized controlled trial</a></h4>
+                <div class="paper-meta">
+                  <div class="paper-venue"><em>Nature Medicine, 2026</em></div>
+                  <div class="paper-links"><a href="https://www.nature.com/articles/s41591-025-04042-6">Paper</a> / <a href="https://github.com/ZyoungXu/GenDSA">Code (GenDSA)</a> / <a href="https://github.com/ZrH42/GenDSA_Data">Data</a> / <a href="https://www.chictr.org.cn/showproj.html?proj=229211">Trial Registration</a></div>
+                </div>
+                <div class="paper-authors">
+                  Huangxuan Zhao*, Yaowei Bai*, Lei Chen*, Jinqiang Ma*, Yu Lei, Tao Sun, Linxia Wu, Ruiheng Zhang,
+                  <strong>Ziyang Xu</strong>, Xiaoyun Liang, Yi Li, Yan Huang, Yun Feng, Cheng Hong, Zhongrong Miao,
+                  Lin Long, Haidong Zhu, Jiahe Zheng, Lin Fan, Zhuting Fang, Peng Dong, Lefei Zhang, Xiaoyu Han,
+                  Bin Wang, Bin Liang, Xiangwen Xia, Xuefeng Kan, Chengcheng Zhu, Bo Du,
+                  <a href="https://xwcv.github.io/">Xinggang Wang</a>,
+                  <a href="https://scholar.google.com/citations?user=abn37yYAAAAJ&amp;hl=zh-CN&amp;oi=ao">Chuansheng Zheng</a>
+                </div>
+                <div class="paper-contribution">* Equal contribution</div>
+                <div class="paper-role"><strong>Role:</strong> Algorithm Lead</div>
+                <p>GenDSA-V2 iterates our previously developed GenDSA system using data from 46,829 patients, more than 5 million DSA images, and 70 centers. In a completed prospective randomized controlled trial of 1,068 patients, it reduced radiation exposure for patients and healthcare professionals by approximately two-thirds while maintaining noninferior operation time and similar complication rates.</p>
+              </td>
+            </tr>
 
-    <tr onmouseout="GaraMoSt_stop()" onmouseover="GaraMoSt_start()" bgcolor="#ffffd0">
-      <td style="padding:20px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='GaraMoSt_image'>
-            <img src='images/GaraMoSt_after.png' width=110%>
-          </div>
-          <img src='images/GaraMoSt_before.png' width=110%>
-        </div>
-        <script type="text/javascript">
-          function GaraMoSt_start() {
-            document.getElementById('GaraMoSt_image').style.opacity = "1";
-          }
+            <tr class="research-card">
+              <td class="research-media-cell">
+                <div class="research-preview" role="group" tabindex="0" aria-label="GenDSA low-dose DSA comparison">
+                  <img class="research-preview-image research-preview-base" src="images/GenDSA.png" alt="Standard DSA image used for comparison with GenDSA" width="1299" height="988" loading="lazy" decoding="async">
+                  <img class="research-preview-image research-preview-hover" src="images/GenDSA_after_demo.gif" alt="Low-dose DSA sequence generated by GenDSA" width="820" height="673" loading="lazy" decoding="async">
+                </div>
+              </td>
+              <td class="research-detail-cell">
+                <span class="representative-badge">Representative Work</span>
+                <h4 class="paper-title"><a href="https://www.cell.com/med/fulltext/S2666-6340(24)00307-6">Large-scale pretrained frame generative model enables real-time low-dose DSA imaging: An AI system development and multi-center validation study</a></h4>
+                <div class="paper-meta">
+                  <div class="paper-venue"><em>Med (Cell Press), 2025</em></div>
+                  <div class="paper-links"><a href="https://www.cell.com/med/fulltext/S2666-6340(24)00307-6">Paper</a> / <a href="https://github.com/ZyoungXu/GenDSA">Code</a></div>
+                </div>
+                <div class="paper-authors">
+                  <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&amp;hl=zh-CN&amp;oi=ao">Huangxuan Zhao*</a>,
+                  <strong>Ziyang Xu*</strong>, Lei Chen*, Linxia Wu*,
+                  <a href="https://github.com/ziwei-cui">Ziwei Cui</a>, Jinqiang Ma, Tao Sun, Yu Lei, Nan Wang,
+                  Hongyao Hu, Yiqing Tan, Wei Lu, Wenzhong Yang, Kaibing Liao, Gaojun Teng, Xiaoyun Liang, Yi Li,
+                  Congcong Feng, Tong Nie, Xiaoyu Han, Dongqiao Xiang, Charles B.L.M. Majoie, Wim H. van Zwam,
+                  Aad van der Lugt, P. Matthijs van der Sluijs, Theo van Walsum, Yun Feng, Guoli Liu, Yan Huang,
+                  <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>, Xuefeng Kan, Ruisheng Su,
+                  Weihua Zhang, <a href="https://xwcv.github.io/">Xinggang Wang</a>,
+                  <a href="https://scholar.google.com/citations?user=abn37yYAAAAJ&amp;hl=zh-CN&amp;oi=ao">Chuansheng Zheng</a>
+                </div>
+                <div class="paper-contribution">* Equal contribution</div>
+                <div class="paper-role"><strong>Role:</strong> Co-first Author · Algorithm Lead</div>
+                <p>GenDSA is a large-scale pretrained multi-frame generative system for real-time low-dose DSA imaging. It was developed on approximately 3 million DSA images from 27,117 patients at 10 hospitals and evaluated on two additional datasets from 25 hospitals; using one-third of the clinical radiation dose, it generated frames in 0.07 seconds and achieved image quality comparable to full-sampled videos.</p>
+              </td>
+            </tr>
 
-          function GaraMoSt_stop() {
-            document.getElementById('GaraMoSt_image').style.opacity = "0";
-          }
-          GaraMoSt_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:80%;vertical-align:middle">
-        <!-- 论文标题 -->
-          <span class="papertitle">
-            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/35076" style="font-family: 'Playfair Display'; font-size:9px;">
-              <h1 style="font-weight:700;">GaraMoSt: Parallel Multi-Granularity Motion and Structural Modeling for Efficient Multi-Frame Interpolation in DSA Images</h1>
-            </a>
-          </span>
-        <!-- 期刊/会议名称 + paper/code/project page -->
-        <t>
-          <h1 style="font-size:16px;">
-            <em> AAAI Conference on Artificial Intelligence (AAAI), 2025</em>
-            <br>
-            <a href="https://arxiv.org/abs/2412.14118">Paper</a>
-            /
-            <a href="https://github.com/ZyoungXu/GaraMoSt">Code</a>
-          </h1>
-        </t>
-    <strong>Ziyang Xu</strong>,
-    <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&hl=zh-CN&oi=ao">Huangxuan Zhao</a>,
-    <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
-    <a href="https://xwcv.github.io/">Xinggang Wang</a>
-        <p>
-          Compared to our last job MoSt-DSA, GaraMoSt adds multi-granularity motion and structural feature modeling and modifies the overall Pipeline into a highly parallel design, which greatly improves the accuracy and reduces high-frequency and low-frequency noise under the same inference time level (for interpolating 3 frames, only increasing by 0.005s). Comprehensive beyond the SOTA natural scene, and DSA scene methods.
-        </p>
-      </td>
-    </tr>
+            <tr class="research-card">
+              <td class="research-media-cell">
+                <div class="research-preview" role="group" tabindex="0" aria-label="GaraMoSt DSA frame interpolation comparison">
+                  <img class="research-preview-image research-preview-base" src="images/GaraMoSt_before.png" alt="Input DSA frames for GaraMoSt interpolation" width="15213" height="12094" loading="lazy" decoding="async">
+                  <img class="research-preview-image research-preview-hover" src="images/GaraMoSt_after.png" alt="DSA frames interpolated by GaraMoSt" width="9448" height="7796" loading="lazy" decoding="async">
+                </div>
+              </td>
+              <td class="research-detail-cell">
+                <h4 class="paper-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/35076">GaraMoSt: Parallel Multi-Granularity Motion and Structural Modeling for Efficient Multi-Frame Interpolation in DSA Images</a></h4>
+                <div class="paper-meta">
+                  <div class="paper-venue"><em>AAAI Conference on Artificial Intelligence (AAAI), 2025</em></div>
+                  <div class="paper-links"><a href="https://arxiv.org/abs/2412.14118">Paper</a> / <a href="https://github.com/ZyoungXu/GaraMoSt">Code</a></div>
+                </div>
+                <div class="paper-authors">
+                  <strong>Ziyang Xu</strong>,
+                  <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&amp;hl=zh-CN&amp;oi=ao">Huangxuan Zhao</a>,
+                  <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+                  <a href="https://xwcv.github.io/">Xinggang Wang</a>
+                </div>
+                <div class="paper-role"><strong>Role:</strong> First Author</div>
+                <p>GaraMoSt extends MoSt-DSA with parallel multi-granularity motion and structural feature extraction. The design improves noise suppression, accuracy, and visual quality within the same computational time scale, outperforming MoSt-DSA and natural-scene video frame interpolation baselines on DSA interpolation.</p>
+              </td>
+            </tr>
 
+            <tr class="research-card">
+              <td class="research-media-cell">
+                <div class="research-preview" role="group" tabindex="0" aria-label="MoSt-DSA frame interpolation comparison">
+                  <img class="research-preview-image research-preview-base" src="images/MoSt-DSA_before.png" alt="Input DSA frames for MoSt-DSA interpolation" width="11906" height="8125" loading="lazy" decoding="async">
+                  <img class="research-preview-image research-preview-hover" src="images/MoSt-DSA_after.png" alt="DSA frames interpolated by MoSt-DSA" width="5196" height="3876" loading="lazy" decoding="async">
+                </div>
+              </td>
+              <td class="research-detail-cell">
+                <h4 class="paper-title"><a href="https://ebooks.iospress.nl/volumearticle/69626">MoSt-DSA: Modeling Motion and Structural Interactions for Direct Multi-Frame Interpolation in DSA Images</a></h4>
+                <div class="paper-meta">
+                  <div class="paper-venue"><em>European Conference on Artificial Intelligence (ECAI), 2024</em></div>
+                  <div class="paper-links"><a href="https://arxiv.org/abs/2407.07078">Paper</a> / <a href="https://github.com/ZyoungXu/MoSt-DSA">Code</a></div>
+                </div>
+                <div class="paper-authors">
+                  <strong>Ziyang Xu</strong>,
+                  <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&amp;hl=zh-CN&amp;oi=ao">Huangxuan Zhao</a>,
+                  <a href="https://github.com/ziwei-cui">Ziwei Cui</a>,
+                  <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+                  <a href="https://scholar.google.com/citations?user=abn37yYAAAAJ&amp;hl=zh-CN&amp;oi=ao">Chuansheng Zheng</a>,
+                  <a href="https://xwcv.github.io/">Xinggang Wang</a>
+                </div>
+                <div class="paper-role"><strong>Role:</strong> First Author</div>
+                <p>MoSt-DSA is the first deep learning method designed specifically for DSA frame interpolation. It models motion-structure interactions and directly generates an arbitrary number of intermediate frames at arbitrary time steps in a single forward pass, establishing the algorithmic foundation for the subsequent GaraMoSt and GenDSA systems.</p>
+              </td>
+            </tr>
 
-    <tr onmouseout="XSVID_stop()" onmouseover="XSVID_start()">
-      <td style="padding:20px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='XSVID_image'>
-            <img src='images/XSVID_after.png' width=110%>
-          </div>
-          <img src='images/XSVID_before.png' width=110%>
-        </div>
-        <script type="text/javascript">
-          function XSVID_start() {
-            document.getElementById('XSVID_image').style.opacity = "1";
-          }
+            <tr class="research-theme-row">
+              <td colspan="2">
+                <h3>Multimodal Generation and Visual Perception</h3>
+                <p>I also study multimodal world generation and robust visual perception, including joint video-LiDAR generation and extremely small object detection in videos.</p>
+              </td>
+            </tr>
 
-          function XSVID_stop() {
-            document.getElementById('XSVID_image').style.opacity = "0";
-          }
-          XSVID_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:80%;vertical-align:middle">
-        <!-- 论文标题 -->
-          <span class="papertitle">
-            <a href="https://arxiv.org/abs/2407.18137" style="font-family: 'Playfair Display'; font-size:9px;">
-              <h1 style="font-weight:700;">XS-VID: An Extremely Small Video Object Detection Dataset</h1>
-            </a>
-          </span>
-        <!-- 期刊/会议名称 + paper/code/project page -->
-        <t>
-          <h1 style="font-size:16px;">
-            <em> arXiv preprint, 2024</em>
-            <br>
-            <a href="https://arxiv.org/abs/2407.18137">Paper</a>
-            /
-            <a href="https://github.com/gjhhust/YOLOFT">Code(YOLOFT)</a>
-            /
-            <a href="https://gjhhust.github.io/XS-VID/">Dataset(XS-VID)</a>
-          </h1>
-        </t>
-    Jiahao Guo,
-    <strong>Ziyang Xu</strong>,
-    Lianjun Wu,
-    Fei Gao,
-    <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
-    <a href="https://xwcv.github.io/">Xinggang Wang</a>
-        <p>
-          XS-VID dataset comprises aerial data from various periods and scenes, and extensively collects three types of objects with smaller pixel areas: extremely small (0-12^2), relatively small (12^2-20^2), and generally small (20^2-32^2). XS-VID offers unprecedented breadth and depth in covering and quantifying minuscule objects, significantly enriching the scene and object diversity in the dataset.
-          YOLOFT enhances local feature associations and integrates temporal motion features, significantly improving the accuracy and stability of Small Video Object Detection.
-        </p>
-      </td>
-    </tr>
+            <tr class="research-card">
+              <td class="research-media-cell">
+                <div class="research-preview" role="group" tabindex="0" aria-label="Genesis multimodal driving scene generation comparison">
+                  <img class="research-preview-image research-preview-base" src="images/Genesis.png" alt="Driving scene inputs for Genesis" width="3307" height="1463" loading="lazy" decoding="async">
+                  <img class="research-preview-image research-preview-hover" src="images/Genesis_after_demo.gif" alt="Multimodal driving scene generated by Genesis" width="1627" height="1203" loading="lazy" decoding="async">
+                </div>
+              </td>
+              <td class="research-detail-cell">
+                <h4 class="paper-title"><a href="https://arxiv.org/abs/2506.07497">Genesis: Multimodal Driving Scene Generation with Spatio-Temporal and Cross-Modal Consistency</a></h4>
+                <div class="paper-meta">
+                  <div class="paper-venue"><em>Conference on Neural Information Processing Systems (NeurIPS), 2025</em></div>
+                  <div class="paper-links"><a href="https://arxiv.org/abs/2506.07497">Paper</a> / <a href="https://github.com/xiaomi-research/genesis">Code</a> / <a href="https://xiaomi-research.github.io/genesis/">Project</a></div>
+                </div>
+                <div class="paper-authors">
+                  Xiangyu Guo*, Zhanqian Wu*, Kaixin Xiong*, <strong>Ziyang Xu</strong>, Lijun Zhou, Gangwei Xu,
+                  Shaoqing Xu, Haiyang Sun, Bing Wang, Guang Chen, Hangjun Ye,
+                  <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+                  <a href="https://xwcv.github.io/">Xinggang Wang</a>
+                </div>
+                <div class="paper-contribution">* Equal contribution</div>
+                <p>Genesis jointly generates multi-view driving videos and LiDAR sequences with spatio-temporal and cross-modal consistency. It couples a DiT-based video diffusion model and a BEV-aware LiDAR generator through a shared latent space, achieving strong generation results on nuScenes and improving downstream segmentation and 3D detection.</p>
+              </td>
+            </tr>
 
-
-    <tr onmouseout="GenDSA_stop()" onmouseover="GenDSA_start()" bgcolor="#ffffd0">
-      <td style="padding:20px;width:20%;vertical-align:middle">
-        <div class="one">
-          <!-- <div class="two" id='GenDSA_image'><video  width=100% muted autoplay loop>
-          <source src="videos/GenDSA.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <div class="two" id='GenDSA_image'>
-            <img src='images/GenDSA_after_demo.gif' width=110%>
-          </div>
-          <img src='images/GenDSA.png' width=110%>
-        </div>
-        <script type="text/javascript">
-          function GenDSA_start() {
-            document.getElementById('GenDSA_image').style.opacity = "1";
-          }
-
-          function GenDSA_stop() {
-            document.getElementById('GenDSA_image').style.opacity = "0";
-          }
-          GenDSA_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:80%;vertical-align:middle">
-        <!-- 论文标题 -->
-          <span class="papertitle">
-            <a href="https://www.cell.com/med/fulltext/S2666-6340(24)00307-6" style="font-family: 'Playfair Display'; font-size:9px;">
-              <h1 style="font-weight:700;">Large-scale Pretrained Frame Generative Model Enables Real-Time Low-Dose DSA Imaging: an AI System Development and Multicenter Validation Study</h1>
-            </a>
-          </span>
-        <!-- 期刊/会议名称 + paper/code/project page -->
-        <t>
-          <h1 style="font-size:16px;">
-            <em> Med (Cell Press), 2025 (IF 17)</em>
-            <br>
-            <a href="https://www.cell.com/med/pdfExtended/S2666-6340(24)00307-6">Paper</a>
-            /
-            <a href="https://github.com/ZyoungXu/GenDSA">Code</a>
-          </h1>
-        </t>
-    <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&hl=zh-CN&oi=ao">Huangxuan Zhao*</a>,
-    <strong>Ziyang Xu*</strong>,
-    Linxia Wu*,
-    Lei Chen*,
-    <a href="https://github.com/ziwei-cui">Ziwei Cui</a>,
-    Jinqiang Ma,
-    Tao Sun,
-    Yu Lei,
-    Nan Wang,
-    Hongyao Hu,
-    Yiqing Tan,
-    Wei Lu,
-    Wenzhong Yang,
-    Kaibing Liao,
-    Gaojun Teng,
-    Xiaoyun Liang,
-    Yi Li,
-    Congcong Feng,
-    Xiaoyu Han,
-    P.Matthijs van der Sluij,
-    Charles B.L.M. Majoie,
-    Wim H. van Zwam,
-    Yun Feng,
-    Theo van Walsum,
-    Aad van der Lugt,
-    <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
-    Xuefeng Kan,
-    Ruisheng Su,
-    Weihua Zhang,
-    <a href="https://xwcv.github.io/">Xinggang Wang</a>,
-    <a href="https://scholar.google.com/citations?user=abn37yYAAAAJ&hl=zh-CN&oi=ao">Chuansheng Zheng</a>
-        <br>
-        <strong>* equal contribution</strong>
-        <p>
-        GenDSA is a large-scale pretrained multi-frame generative model-based real-time and low-dose DSA imaging system, which pre-trained, fine-tuned and tested on ten million of images from 35 hospitals. Suitable for most DSA scanning protocols, GenDSA could reduce the DSA frame rate (i.e., radiation dose) to 1/3 and generates video that was virtually identical to clinically available protocols. Videos generated by GenDSA reach a comparable level to the full-sampled videos, both in terms of overall quality (4.905 vs 4.935) and lesion assessment (4.825 vs 4.860), which fully demonstrated the potential of GenDSA for clinical applications.
-        </p>
-      </td>
-    </tr>
-
-
-    <tr onmouseout="MoStDSA_stop()" onmouseover="MoStDSA_start()" bgcolor="#ffffd0">
-      <td style="padding:20px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='MoStDSA_image'>
-            <img src='images/MoSt-DSA_after.png' width=110%>
-          </div>
-          <img src='images/MoSt-DSA_before.png' width=110%>
-        </div>
-        <script type="text/javascript">
-          function MoStDSA_start() {
-            document.getElementById('MoStDSA_image').style.opacity = "1";
-          }
-
-          function MoStDSA_stop() {
-            document.getElementById('MoStDSA_image').style.opacity = "0";
-          }
-          MoStDSA_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:80%;vertical-align:middle">
-        <!-- 论文标题 -->
-          <span class="papertitle">
-            <a href="https://ebooks.iospress.nl/volumearticle/69626" style="font-family: 'Playfair Display'; font-size:9px;">
-              <h1 style="font-weight:700;">MoSt-DSA: Modeling Motion and Structural Interactions for Direct Multi-Frame Interpolation in DSA Images</h1>
-            </a>
-          </span>
-        <!-- 期刊/会议名称 + paper/code/project page -->
-        <t>
-          <h1 style="font-size:16px;">
-            <em> European Conference on Artificial Intelligence (ECAI), 2024</em>
-            <br>
-            <a href="https://arxiv.org/abs/2407.07078">Paper</a>
-            /
-            <a href="https://github.com/ZyoungXu/MoSt-DSA">Code</a>
-          </h1>
-        </t>
-
-    <strong>Ziyang Xu</strong>,
-    <a href="https://scholar.google.com/citations?user=AaQm4aYAAAAJ&hl=zh-CN&oi=ao">Huangxuan Zhao</a>,
-    <a href="https://github.com/ziwei-cui">Ziwei Cui</a>,
-    <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
-    <a href="https://scholar.google.com/citations?user=abn37yYAAAAJ&hl=zh-CN&oi=ao">Chuansheng Zheng</a>,
-    <a href="https://xwcv.github.io/">Xinggang Wang</a>
-        <p>
-        MoSt-DSA is the first work that uses deep learning for DSA frame interpolation, comprehensively achieving SOTA in accuracy, speed, visual effect, and memory usage. Meanwhile, MoSt-DSA is also the first method that directly achieves any number of interpolations at any time steps with just one forward pass during both training and testing. If applied clinically, MoSt-DSA can significantly reduce the DSA radiation dose received by doctors and patients when applied clinically, lowering it by 50%, 67%, and 75% when interpolating 1 to 3 frames, respectively.
-        </p>
-      </td>
-    </tr>
-
+            <tr class="research-card">
+              <td class="research-media-cell">
+                <div class="research-preview" role="group" tabindex="0" aria-label="XS-VID extremely small object detection comparison">
+                  <img class="research-preview-image research-preview-base" src="images/XSVID_before.png" alt="Aerial video frame from the XS-VID dataset" width="4041" height="2265" loading="lazy" decoding="async">
+                  <img class="research-preview-image research-preview-hover" src="images/XSVID_after.png" alt="Extremely small objects detected in an XS-VID video frame" width="6142" height="4095" loading="lazy" decoding="async">
+                </div>
+              </td>
+              <td class="research-detail-cell">
+                <h4 class="paper-title"><a href="https://arxiv.org/abs/2407.18137">XS-VID: An Extremely Small Video Object Detection Dataset</a></h4>
+                <div class="paper-meta">
+                  <div class="paper-venue"><em>arXiv preprint, 2024</em> <span class="paper-status">Extended manuscript under review</span></div>
+                  <div class="paper-links"><a href="https://arxiv.org/abs/2407.18137">Paper</a> / <a href="https://github.com/gjhhust/YOLOFT">Code</a> / <a href="https://gjhhust.github.io/XS-VID/">Dataset</a></div>
+                </div>
+                <div class="paper-authors">
+                  Jiahao Guo, <strong>Ziyang Xu</strong>, Lianjun Wu, Fei Gao,
+                  <a href="https://eic.hust.edu.cn/professor/liuwenyu/">Wenyu Liu</a>,
+                  <a href="https://xwcv.github.io/">Xinggang Wang</a>
+                </div>
+                <p>XS-VID introduces a diverse aerial video benchmark for extremely small object detection, covering eight categories and objects below 32² pixels together with track and motion annotations. The accompanying YOLOFT baseline strengthens local feature association and temporal motion modeling, improving the accuracy and stability of small video object detection.</p>
+              </td>
+            </tr>
           </tbody></table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -582,12 +341,12 @@
                 <div class="internship-list">
                   <div class="internship-entry">
                     <div class="internship-logo-wrap">
-                      <img src="images/VIVO.png" alt="VIVO logo" class="internship-logo">
+                      <img src="images/VIVO.png" alt="vivo logo" class="internship-logo" width="200" height="200" loading="lazy" decoding="async">
                     </div>
                     <div class="internship-detail">
-                      <div class="internship-role">Research Intern, VIVO AI Lab</div>
-                      <div class="internship-meta">2024.10~2025.08, Hangzhou, China</div>
-                      <div class="internship-topic">Research on end-side multi-modal content understanding and generation</div>
+                      <div class="internship-role">Research Intern, vivo AI Lab</div>
+                      <div class="internship-meta">October 2024 – August 2025 · Hangzhou, China</div>
+                      <div class="internship-topic">Worked on efficient on-device image inpainting and multimodal content generation, with a focus on model distillation and deployment-oriented optimization. This work led to PixelHacker and Moebius.</div>
                     </div>
                   </div>
                 </div>
@@ -599,87 +358,76 @@
             <tr>
               <td class="resume-column" style="padding:20px;width:100%;vertical-align:top">
 
-                <h2 id="competition" class="resume-title">Competition Experience</h2>
-                <div class="resume-note"><span class="resume-legend"><sup class="resume-flag">🚩</sup>: Team leader; ranking first</span></div>
-                <div class="resume-entry">
-                  <div><sup class="resume-flag">🚩</sup> The 20th Innovation Cup College Students Extracurricular Academic Science and Technology Works Competition (创新杯大学生课外学术科技作品竞赛), <span class="resume-emphasis">Special Prize (特等奖)</span> in the Mathematical Information Group (数理信息组), 2020.</div>
-                  <div class="resume-subnote"><span class="resume-icon">🏆</span> I lead the team to win the <span class="resume-emphasis">only special prize (唯一特等奖)</span> in the Mathematical Information Group.</div>
-                </div>
-                <div class="resume-entry">
-                  <div><sup class="resume-flag">🚩</sup> Huawei Cup 19th China Graduate Mathematical Modeling Competition (华为杯中国研究生数学建模竞赛), <span class="resume-emphasis">National Second Prize (国家级二等奖)</span>, 2022.</div>
-                  <div class="resume-subnote"><span class="resume-icon">🥈</span> <span class="resume-emphasis">Top 13% (前13%)</span> of all contestants.</div>
-                </div>
-                <div class="resume-entry">
-                  <sup class="resume-flag">🚩</sup> Artificial Intelligence Track of the 14th China College Student Computer Design Competition (中国大学生计算机设计大赛人工智能赛道), <span class="resume-emphasis">National Third Prize (国家级三等奖)</span>, 2021.
-                  <div class="resume-subnote"><span class="resume-icon">🥉 </span>Among the 4,886 works that won the provincial competition and entered the national competition, <span class="resume-emphasis">only 8.5%</span> won this award.</div>
-                </div>
-                <div class="resume-entry">
-                  <sup class="resume-flag">🚩</sup> National College Student Mathematical Modeling Competition (全国大学生数学建模竞赛), <span class="resume-emphasis">Second Prize in Hubei Province (湖北省二等奖)</span>, 2020.
-                </div>
-                <div class="resume-entry">
-                  National College Student Integrated Circuit Innovation and Entrepreneurship Competition (全国大学生集成电路创新创业大赛), <span class="resume-emphasis">Third Prize in Hubei Province (湖北省三等奖)</span>, 2021.
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="resume-column resume-column-right" style="padding:20px;width:100%;vertical-align:top">
-
                 <h2 id="honors" class="resume-title">Selected Honors &amp; Awards</h2>
                 <div class="resume-entry">
-                  <span class="resume-emphasis">National Scholarship for Master Student (国家硕士生奖学金)</span>, 2024.
-                  <div class="resume-subnote"><span class="resume-icon">🏆</span> The most prestigious honor for university students in China, awarded to only <span class="resume-emphasis">0.2%</span> of candidates nationwide.</div>
+                  <span class="archive-emphasis">Outstanding Master’s Graduate</span>, Huazhong University of Science and Technology (HUST) (优秀硕士毕业生), 2025.
                 </div>
                 <div class="resume-entry">
-                  Served as team leader and led a provincial undergraduate innovation and entrepreneurship training project, <span class="resume-emphasis">"Research and Implementation of a Video-Based Vehicle-Assisted Driving Device"</span>; received <span class="resume-emphasis">Excellent Completion (优秀结题)</span> in 2021.
+                  <span class="archive-emphasis">National Scholarship for Graduate Students (Master’s Level)</span> (研究生国家奖学金，硕士研究生), 2024.
+                  <div class="resume-subnote">Awarded to only <span class="archive-emphasis">0.2%</span> of candidates nationwide.</div>
                 </div>
                 <div class="resume-entry">
-                  <span class="resume-emphasis">Outstanding Master's Graduate (优秀硕士毕业生)</span>, 2025.
+                  <span class="archive-emphasis">Outstanding Graduate Student</span>, HUST (三好硕士生), 2024.
                 </div>
                 <div class="resume-entry">
-                  <span class="resume-emphasis">Excellent Master's Student (三好硕士生)</span>, 2024.
+                  <span class="archive-emphasis">Outstanding Graduate</span>, Wuhan University of Technology (WHUT) (优秀本科毕业生), 2022.
                 </div>
                 <div class="resume-entry">
-                  <span class="resume-emphasis">Outstanding Undergraduate Graduate (优秀本科毕业生)</span>, 2022.
+                  Provincial Undergraduate Innovation and Entrepreneurship Training Program — <span class="archive-emphasis">Excellent Completion (优秀结题)</span>, 2021.
+                  <div class="resume-subnote"><span class="resume-tag">Team Lead</span> “Research and Implementation of a Video-Based Vehicle-Assisted Driving Device.”</div>
                 </div>
                 <div class="resume-entry">
-                  <span class="resume-emphasis">Excellent Undergraduate Student (三好本科生)</span>, 2021.
+                  <span class="archive-emphasis">Outstanding Undergraduate Student</span>, WHUT (三好本科生), 2021.
                 </div>
               </td>
             </tr>
             <tr>
               <td class="resume-column resume-column-right" style="padding:20px;width:100%;vertical-align:top">
 
-                <h2 id="services" class="resume-title">Academic Services</h2>
-                <div class="resume-entry">Reviewer of TPAMI 2026.</div>
-                <div class="resume-entry">Reviewer of CVPR 2026.</div>
-                <div class="resume-entry">Reviewer of ECCV 2026/2024.</div>
-                <div class="resume-entry">Reviewer of IJCV 2024.</div>
-                <div class="resume-entry">Reviewer of Image and Vision Computing, 2026.</div>
+                <h2 id="competition" class="resume-title">Selected Competitions</h2>
+                <div class="resume-entry">
+                  <span class="resume-tag">Team Lead</span> Huawei Cup 19th China Graduate Mathematical Modeling Competition (华为杯第十九届中国研究生数学建模竞赛), <span class="archive-emphasis">National Second Prize (国家级二等奖)</span>, 2022.
+                  <div class="resume-subnote"><span class="archive-emphasis">Top 13% (前13%)</span> of all teams.</div>
+                </div>
+                <div class="resume-entry">
+                  <span class="resume-tag">Team Lead</span> Artificial Intelligence Track of the 14th China College Student Computer Design Competition (中国大学生计算机设计大赛人工智能赛道), <span class="archive-emphasis">National Third Prize (国家级三等奖)</span>, 2021.
+                  <div class="resume-subnote">Among the 4,886 entries that advanced from the provincial round to the national competition, <span class="archive-emphasis">8.5%</span> received this award.</div>
+                </div>
+                <div class="resume-entry">
+                  National College Student Integrated Circuit Innovation and Entrepreneurship Competition (全国大学生集成电路创新创业大赛), <span class="archive-emphasis">Third Prize in Hubei Province (湖北省三等奖)</span>, 2021.
+                </div>
+                <div class="resume-entry">
+                  <span class="resume-tag">Team Lead</span> The 20th Innovation Cup College Students Extracurricular Academic Science and Technology Works Competition (创新杯大学生课外学术科技作品竞赛), <span class="archive-emphasis">Special Prize (特等奖)</span> in the Mathematical Information Group (数理信息组), 2020.
+                  <div class="resume-subnote">I led the team to win the <span class="archive-emphasis">sole Special Prize (唯一特等奖)</span> in the Mathematical Information category.</div>
+                </div>
+                <div class="resume-entry">
+                  <span class="resume-tag">Team Lead</span> National College Student Mathematical Modeling Competition (全国大学生数学建模竞赛), <span class="archive-emphasis">Second Prize in Hubei Province (湖北省二等奖)</span>, 2020.
+                </div>
               </td>
             </tr>
-          </tbody></table>
-
-          <br>
-
-          <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=2d78ad&w=720&t=tt&d=WbjemnXwFa9drIuorCaE_2YGHaQCnVCsuV97d4pMBZk&co=ffffff&cmo=f71113&cmn=f8a400&ct=808080'></script>
-
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:center;font-size:small;">
-                  Thanks to <a href="https://github.com/jonbarron/jonbarron_website">jonbarron's website template</a>.
-                </p>
+              <td class="resume-column resume-column-right" style="padding:20px;width:100%;vertical-align:top">
+
+                <h2 id="services" class="resume-title">Academic Service</h2>
+                <div class="resume-entry"><span class="archive-emphasis">Conference Reviewer:</span> CVPR 2026; ECCV 2024 and 2026.</div>
+                <div class="resume-entry"><span class="archive-emphasis">Journal Reviewer:</span> <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em> (TPAMI) and <em>Image and Vision Computing</em>, 2026; <em>International Journal of Computer Vision</em> (IJCV), 2024.</div>
               </td>
             </tr>
           </tbody></table>
+
+          <div id="mapmyvisitors-widget" aria-label="Visitor map">
+            <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=2d78ad&amp;w=720&amp;t=tt&amp;d=WbjemnXwFa9drIuorCaE_2YGHaQCnVCsuV97d4pMBZk&amp;co=ffffff&amp;cmo=f71113&amp;cmn=f8a400&amp;ct=808080"></script>
+          </div>
+
+          <footer class="site-footer">
+            Website template adapted from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+          </footer>
         </td>
       </tr>
-    </table>
+    </tbody></table>
     <script type="text/javascript">
       (function () {
-        var sectionIds = ["highlight", "research", "internship", "competition", "honors", "services"];
+        var sectionIds = ["highlight", "research", "internship", "honors", "competition", "services"];
         var navLinks = Array.prototype.slice.call(document.querySelectorAll(".site-nav a"));
         var sections = sectionIds.map(function (id) {
           return document.getElementById(id);
