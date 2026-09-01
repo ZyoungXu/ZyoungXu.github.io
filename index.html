@@ -19,13 +19,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&amp;display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon/favicon_32.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260901-6">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260902-1">
 
   </head>
 
   <body>
     <nav class="site-nav" aria-label="Section navigation">
-      <a href="#highlight" class="active">Highlight</a>
+      <a href="#news" class="active">News</a>
+      <a href="#highlight">Highlight</a>
       <a href="#research">Research</a>
       <a href="#internship">Internship</a>
       <a href="#honors">Honors &amp; Awards</a>
@@ -65,11 +66,26 @@
                   <!-- <a href="https://www.xiaohongshu.com/user/profile/6686dd4e000000000f037feb">RedNote</a> -->
                 </p>
                 <p style="text-align:center">
-                Latest Update: September 1, 2026
+                Latest Update: September 2, 2026
                 </p>
               </td>
               <td class="profile-cell" style="padding:2.5%;width:18%;max-width:25%">
                 <a href="images/xzy0403_remove-shadow.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 6%;" alt="Portrait of Ziyang Xu" src="images/xzy0403_remove-shadow.png" class="hoverZoomLink profile-image"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2 id="news">News</h2>
+                <div class="highlight-list">
+                  <div class="highlight-entry"><strong>[2026.09]</strong> I will be in Malm&ouml;, Sweden, from September 7&ndash;12 for <strong>ECCV 2026</strong>. Our paper <a href="https://arxiv.org/abs/2606.19195"><em>Moebius</em></a> will be presented on Saturday, September 12, from 10:30 AM to 12:30 PM CEST at ExHall #63. Feel free to stop by or <a href="mailto:xuzyoung@hust.edu.cn">reach out</a> if you would like to meet during the conference.</div>
+                  <div class="highlight-entry"><strong>[2026.06]</strong> Our paper <a href="https://arxiv.org/abs/2606.19195"><em>Moebius</em></a> was accepted to <strong>ECCV 2026</strong>.</div>
+                  <div class="highlight-entry"><strong>[2026.01]</strong> Our randomized controlled trial on <a href="https://www.nature.com/articles/s41591-025-04042-6"><em>GenDSA-V2</em></a> was published in <strong><em>Nature Medicine</em></strong>.</div>
+                  <div class="highlight-entry"><strong>[2025.09]</strong> Our paper <a href="https://arxiv.org/abs/2506.07497"><em>Genesis</em></a> was accepted to <strong>NeurIPS 2025</strong>.</div>
+                  <div class="highlight-entry"><strong>[2025.01]</strong> Our <a href="https://www.cell.com/med/fulltext/S2666-6340(24)00307-6"><em>GenDSA</em></a> study was published in <strong><em>Med</em> (Cell Press)</strong>.</div>
+                  <div class="highlight-entry"><strong>[2025.01]</strong> Our paper <a href="https://ojs.aaai.org/index.php/AAAI/article/view/35076"><em>GaraMoSt</em></a> was accepted to <strong>AAAI 2025</strong>.</div>
+                </div>
               </td>
             </tr>
           </tbody></table>
@@ -427,7 +443,7 @@
     </tbody></table>
     <script type="text/javascript">
       (function () {
-        var sectionIds = ["highlight", "research", "internship", "honors", "competition", "services"];
+        var sectionIds = ["news", "highlight", "research", "internship", "honors", "competition", "services"];
         var navLinks = Array.prototype.slice.call(document.querySelectorAll(".site-nav a"));
         var sections = sectionIds.map(function (id) {
           return document.getElementById(id);
