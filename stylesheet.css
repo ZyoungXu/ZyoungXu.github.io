@@ -195,7 +195,7 @@ h2 {
 
 .research-theme-row h3 {
   margin: 0;
-  color: #294f72;
+  color: #000;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 19px;
   line-height: 1.3;
@@ -223,7 +223,7 @@ h2 {
 .research-theme-row p {
   max-width: 880px;
   margin: 6px 0 0;
-  color: #536273;
+  color: #000;
   line-height: 1.55;
 }
 
@@ -317,6 +317,10 @@ h2 {
 .paper-meta {
   margin-bottom: 6px;
   line-height: 1.45;
+}
+
+.paper-venue > em {
+  font-weight: 700;
 }
 
 .paper-links {
@@ -461,7 +465,7 @@ h2 {
 }
 
 .archive-emphasis {
-  color: #2f5f85;
+  color: #000;
   font-weight: 700;
 }
 
