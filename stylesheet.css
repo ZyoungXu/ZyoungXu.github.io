@@ -508,7 +508,7 @@ h2 {
   margin-bottom: 0;
 }
 
-#mapmyvisitors-widget {
+.visitor-map-container {
   width: 100%;
   max-width: 100%;
   margin: 12px auto 0;
@@ -696,7 +696,7 @@ h2 {
     height: 180px;
   }
 
-  #mapmyvisitors-widget {
+  .visitor-map-container {
     margin-top: 8px;
   }
 
