@@ -71,7 +71,9 @@ a {
 a:focus,
 a:hover {
   color: #f09228;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
 html {
@@ -146,9 +148,9 @@ h2 {
 }
 
 .site-nav a.active {
-  color: #c00000;
+  color: #2f5f85;
   font-weight: 700;
-  background: #fff4ef;
+  background: #eef5fb;
 }
 
 @media (min-width: 769px) and (max-width: 1559px) {
@@ -197,6 +199,25 @@ h2 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 19px;
   line-height: 1.3;
+}
+
+.research-theme-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  margin-right: 7px;
+  padding: 2px 6px;
+  color: #2f5f85;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.3;
+  vertical-align: 0.12em;
+  white-space: nowrap;
+  background: #eef5fb;
+  border: 1px solid #cfdfec;
+  border-radius: 999px;
+  box-sizing: border-box;
 }
 
 .research-theme-row p {
@@ -435,7 +456,7 @@ h2 {
 }
 
 .resume-emphasis {
-  color: #c00000;
+  color: #b42318;
   font-weight: 700;
 }
 
